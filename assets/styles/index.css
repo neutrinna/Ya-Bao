@@ -1,0 +1,385 @@
+/* код Ани */
+.quantity_inner * {
+  box-sizing: border-box;
+}
+
+.quantity_inner {
+  display: inline-flex;
+  border-radius: 26px;
+  border: 4px solid #337ab7;
+}
+
+.quantity_inner .bt_minus,
+.quantity_inner .bt_plus,
+.quantity_inner .quantity {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
+.quantity_inner .quantity {
+  width: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.quantity_inner .bt_minus svg,
+.quantity_inner .bt_plus svg {
+  stroke: #337ab7;
+  stroke-width: 4;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.quantity_inner .bt_minus:hover svg,
+.quantity_inner .bt_plus:hover svg {
+  stroke: #000;
+}
+
+.carouselPrograms .carousel-inner .active,
+.carouselPrograms .carousel-inner .active + .carousel-item,
+.carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
+  display: block;
+}
+
+.carouselPrograms
+  .carousel-inner
+  .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carouselPrograms
+  .carousel-inner
+  .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+  + .carousel-item,
+.carouselPrograms
+  .carousel-inner
+  .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+  + .carousel-item
+  + .carousel-item {
+  transition: none;
+}
+
+.carouselPrograms .carousel-inner .carousel-item-next,
+.carouselPrograms .carousel-inner .carousel-item-prev {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+}
+
+.carouselPrograms
+  .carousel-inner
+  .active.carousel-item
+  + .carousel-item
+  + .carousel-item
+  + .carousel-item {
+  position: absolute;
+  top: 0;
+  right: -33.333%;
+  z-index: -1;
+  display: block;
+  visibility: visible;
+}
+
+/* left or forward direction */
+.carouselPrograms
+  .active.carousel-item-left
+  + .carousel-item-next.carousel-item-left,
+.carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+.carouselPrograms
+  .carousel-item-next.carousel-item-left
+  + .carousel-item
+  + .carousel-item,
+.carouselPrograms
+  .carousel-item-next.carousel-item-left
+  + .carousel-item
+  + .carousel-item
+  + .carousel-item {
+  position: relative;
+  transform: translate3d(-100%, 0, 0);
+  visibility: visible;
+}
+
+/* farthest right hidden item must be abso position for animations */
+.carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+  display: block;
+  visibility: visible;
+}
+
+/* right or prev direction */
+.carouselPrograms
+  .active.carousel-item-right
+  + .carousel-item-prev.carousel-item-right,
+.carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+.carouselPrograms
+  .carousel-item-prev.carousel-item-right
+  + .carousel-item
+  + .carousel-item,
+.carouselPrograms
+  .carousel-item-prev.carousel-item-right
+  + .carousel-item
+  + .carousel-item
+  + .carousel-item {
+  position: relative;
+  transform: translate3d(100%, 0, 0);
+  visibility: visible;
+  display: block;
+  visibility: visible;
+}
+
+/* код Инны */
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/montserrat-bold.ttf);
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: auto;
+}
+
+.figure {
+  width: 100%;
+  margin: 0;
+}
+
+.figure__img {
+  width: 100%;
+}
+
+.new__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.newcard {
+  display: flex;
+
+  width: 255px;
+}
+
+.newcard__img {
+  height: 71px;
+}
+
+.newcard__img img {
+  height: 100%;
+}
+
+.newcard__price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ff2e65;
+}
+
+.new__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 25px;
+}
+
+.newcard__title {
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.novelty {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+
+  color: #ff2e65;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 24%;
+}
+
+.card__img {
+  width: 253px;
+}
+
+.card__img img {
+  width: 90%;
+}
+
+.card__name {
+  margin-bottom: 18px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #0e0c0d;
+}
+
+.card__description {
+  margin-bottom: 18px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+
+  color: #686466;
+}
+
+.card__group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__price {
+  margin-left: 10px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 19px;
+
+  color: #231f20;
+}
+
+.card__btn {
+  margin-right: 10px;
+  background-color: white;
+  border: none;
+}
+
+/* код Иры */
+
+.font__delivery {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125em;
+}
+
+.font__delivery_pink {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125em;
+  color: rgb(255, 67, 116);
+}
+
+.font__delivery-time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875em;
+}
+
+.font__button-call {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875em;
+  font-weight: 700;
+  color: #696f7a;
+}
+
+.font__phone_pink {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.625em;
+  font-weight: 700;
+  color: rgb(255, 67, 116);
+}
+
+.font__menu {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.938em;
+  color: black;
+  text-decoration: none;
+}
+
+.font__menu_enter {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #696f7a;
+  text-decoration: none;
+}
+
+.font__button-basket {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: white;
+}
+
+body {
+  margin-left: 15vw;
+  margin-top: 1vw;
+  margin-right: 15vw;
+}
+
+.header__menu_up {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.button-call {
+  background-color: #f3f3f7;
+  border: 1px #f3f3f7 solid;
+  border-radius: 28px;
+  padding: 0.65vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  cursor: pointer;
+}
+
+.header__menu_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+
+.button-basket {
+  background-color: #ff2e65;
+  border: 1px #ff2e65 solid;
+  border-radius: 8px;
+  padding: 0.65vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 25px 23px 26px -9px rgba(43, 43, 43, 0.14);
+}
+
+/* код Оли */
