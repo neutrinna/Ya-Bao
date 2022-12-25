@@ -1,385 +1,642 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DM+Sans&family=Inter:wght@100;400&family=Montserrat:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DM+Sans&family=Inter:wght@100;400&family=Montserrat:wght@600;700&display=swap"
+        rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href=".\assets\styles\font.css" />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ya-Bao</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="wrapper">
-      <header>
-        <div class="header__menu_up">
-          <div>
-            <img src=".\assets\images\logo_full.png" alt="logo" />
-          </div>
-          <div>
-            <div class="font__delivery">
-              Доставка пасты <span class="font__delivery_pink">Москва</span>
+        <header>
+            <div class="header__menu_up">
+                <div>
+                    <img src=".\assets\images\logo_full.png" alt="logo" />
+                </div>
+                <div>
+                    <div class="font__delivery">
+                        Доставка пасты <span class="font__delivery_pink">Москва</span>
+                    </div>
+                    <div class="font__delivery-time">
+                        Время доставки <span class="font__delivery_pink">&bull;</span> от
+                        31 мин
+                    </div>
+                </div>
+                <button class="button-call font__button-call">Заказать звонок</button>
+                <div class="font__phone_pink">8 800 333-36-62</div>
             </div>
-            <div class="font__delivery-time">
-              Время доставки <span class="font__delivery_pink">&bull;</span> от
-              31 мин
+            <div class="header__menu_main">
+                <a href="#" class="font__menu">Паста</a>
+                <a href="#" class="font__menu">Супы</a>
+                <a href="#" class="font__menu">Салаты</a>
+                <a href="#" class="font__menu">Антипасти</a>
+                <a href="#" class="font__menu">Напитки</a>
+                <a href="#" class="font__menu">Десерты</a>
+                <a href="#" class="font__menu">Бакалея</a>
+                <a href="#" class="font__menu">Акции</a>
+                <a href="#" class="font__menu">Комбо</a>
+                <a href="#" class="font__menu">Контакты</a>
+                <a href="#" class="font__menu_enter">Войти</a>
+                <button class="button-basket font__button-basket">
+                    Корзина &emsp;|&emsp; 1
+                </button>
             </div>
-          </div>
-          <button class="button-call font__button-call">Заказать звонок</button>
-          <div class="font__phone_pink">8 800 333-36-62</div>
-        </div>
-        <div class="header__menu_main">
-          <a href="#" class="font__menu">Паста</a>
-          <a href="#" class="font__menu">Супы</a>
-          <a href="#" class="font__menu">Салаты</a>
-          <a href="#" class="font__menu">Антипасти</a>
-          <a href="#" class="font__menu">Напитки</a>
-          <a href="#" class="font__menu">Десерты</a>
-          <a href="#" class="font__menu">Бакалея</a>
-          <a href="#" class="font__menu">Акции</a>
-          <a href="#" class="font__menu">Комбо</a>
-          <a href="#" class="font__menu">Контакты</a>
-          <a href="#" class="font__menu_enter">Войти</a>
-          <button class="button-basket font__button-basket">
-            Корзина &emsp;|&emsp; 1
-          </button>
-        </div>
-      </header>
+        </header>
 
-      <figure class="figure">
-        <img
-          class="figure__img"
-          src="./assets/images/homepage/main-image.svg"
-          alt="Плашка YA BAO с надписью дух китайской кухни и с изображением коровы, рыбы, риса, лапши, овощей и фруктов"
-        />
-      </figure>
-      <main>
-        <section class="new">
-          <h2 class="new__title">Новинки</h2>
-          <div class="novelty">
-            <div class="newcard">
-              <div class="newcard__img">
-                <img
-                  src="./assets/images/homepage/new1.jpeg"
-                  alt="Рамен с говядиной"
-                />
-              </div>
-              <div class="new__block">
-                <h3 class="newcard__title">Рамен с говядиной</h3>
-                <div class="newcard__price">490 р</div>
-              </div>
-            </div>
-            <div class="newcard">
-              <div class="newcard__img">
-                <img
-                  src="./assets/images/homepage/new2.jpeg"
-                  alt="Дим-самы с индейкой"
-                />
-              </div>
-              <div class="new__block">
-                <h3 class="newcard__title">Дим-самы с индейкой</h3>
-                <div class="newcard__price">370 р</div>
-              </div>
-            </div>
-            <div class="newcard">
-              <div class="newcard__img">
-                <img
-                  src="./assets/images/homepage/new3.jpeg"
-                  alt="Манила ролл"
-                />
-              </div>
-              <div class="new__block">
-                <h3 class="newcard__title">Манила ролл</h3>
-                <div class="newcard__price">330 р</div>
-              </div>
-            </div>
-            <div class="newcard">
-              <div class="newcard__img">
-                <img src="./assets/images/homepage/new4.jpeg" alt="Кумотори" />
-              </div>
-              <div class="new__block">
-                <h3 class="newcard__title">Кумотори</h3>
-                <div class="newcard__price">495 р</div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="menu">
-          <h2 class="menu__title">Супы</h2>
-          <div class="cards">
-            <div class="card">
-              <div class="card__img">
-                <img
-                  src="./assets/images/homepage/soup1.jpeg"
-                  alt="Суп с лососем"
-                />
-              </div>
-              <div class="card__name">Суп с лососем</div>
-              <div class="card__description">
-                Бульон хондаши, лосось, рис, стружка тунца, водоросли нори
-              </div>
-              <div class="card__group">
-                <div class="card__price">490 р</div>
-                <button class="card__btn">
-                  <img
-                    src="./assets/images/homepage/btn.svg"
-                    alt="Кнопка в корзину"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__img">
-                <img
-                  src="./assets/images/homepage/soup2.jpeg"
-                  alt="Суп с лососем"
-                />
-              </div>
-              <div class="card__name">Чикен чиз</div>
-              <div class="card__description">
-                Сыр моцарелла, сёю каеши, бульон куриный, лапша, вакаме, куриная
-                грудка су-вид, острое масло
-              </div>
-              <div class="card__group">
-                <div class="card__price">365 р</div>
-                <button class="card__btn">
-                  <img
-                    src="./assets/images/homepage/btn.svg"
-                    alt="Кнопка в корзину"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__img">
-                <img
-                  src="./assets/images/homepage/soup1.jpeg"
-                  alt="Суп с лососем"
-                />
-              </div>
-              <div class="card__name">Суп с лососем</div>
-              <div class="card__description">
-                Бульон хондаши, лосось, рис, стружка тунца, водоросли нори
-              </div>
-              <div class="card__group">
-                <div class="card__price">490 р</div>
-                <button class="card__btn">
-                  <img
-                    src="./assets/images/homepage/btn.svg"
-                    alt="Кнопка в корзину"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__img">
-                <img
-                  src="./assets/images/homepage/soup1.jpeg"
-                  alt="Суп с лососем"
-                />
-              </div>
-              <div class="card__name">Суп с лососем</div>
-              <div class="card__description">
-                Бульон хондаши, лосось, рис, стружка тунца, водоросли нори
-              </div>
-              <div class="card__group">
-                <div class="card__price">490 р</div>
-                <button class="card__btn">
-                  <img
-                    src="./assets/images/homepage/btn.svg"
-                    alt="Кнопка в корзину"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__img">
-                <img
-                  src="./assets/images/homepage/soup1.jpeg"
-                  alt="Суп с лососем"
-                />
-              </div>
-              <div class="card__name">Суп с лососем</div>
-              <div class="card__description">
-                Бульон хондаши, лосось, рис, стружка тунца, водоросли нори
-              </div>
-              <div class="card__group">
-                <div class="card__price">490 р</div>
-                <button class="card__btn">
-                  <img
-                    src="./assets/images/homepage/btn.svg"
-                    alt="Кнопка в корзину"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__img">
-                <img
-                  src="./assets/images/homepage/soup1.jpeg"
-                  alt="Суп с лососем"
-                />
-              </div>
-              <div class="card__name">Суп с лососем</div>
-              <div class="card__description">
-                Бульон хондаши, лосось, рис, стружка тунца, водоросли нори
-              </div>
-              <div class="card__group">
-                <div class="card__price">490 р</div>
-                <button class="card__btn">
-                  <img
-                    src="./assets/images/homepage/btn.svg"
-                    alt="Кнопка в корзину"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__img">
-                <img
-                  src="./assets/images/homepage/soup1.jpeg"
-                  alt="Суп с лососем"
-                />
-              </div>
-              <div class="card__name">Суп с лососем</div>
-              <div class="card__description">
-                Бульон хондаши, лосось, рис, стружка тунца, водоросли нори
-              </div>
-              <div class="card__group">
-                <div class="card__price">490 р</div>
-                <button class="card__btn">
-                  <img
-                    src="./assets/images/homepage/btn.svg"
-                    alt="Кнопка в корзину"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__img">
-                <img
-                  src="./assets/images/homepage/soup1.jpeg"
-                  alt="Суп с лососем"
-                />
-              </div>
-              <div class="card__name">Суп с лососем</div>
-              <div class="card__description">
-                Бульон хондаши, лосось, рис, стружка тунца, водоросли нори
-              </div>
-              <div class="card__group">
-                <div class="card__price">490 р</div>
-                <button class="card__btn">
-                  <img
-                    src="./assets/images/homepage/btn.svg"
-                    alt="Кнопка в корзину"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+        <figure class="figure">
+            <img class="figure__img" src="./assets/images/homepage/main-image.svg"
+                alt="Плашка YA BAO с надписью дух китайской кухни и с изображением коровы, рыбы, риса, лапши, овощей и фруктов" />
+        </figure>
+        <main>
+            <section class="new">
+                <h2 class="new__title">Новинки</h2>
+                <div class="novelty">
+                    <div class="newcard">
+                        <div class="newcard__img">
+                            <img src="./assets/images/homepage/new1.jpeg" alt="Рамен с говядиной" />
+                        </div>
+                        <div class="new__block">
+                            <h3 class="newcard__title">Рамен с говядиной</h3>
+                            <div class="newcard__price">490 р</div>
+                        </div>
+                    </div>
+                    <div class="newcard">
+                        <div class="newcard__img">
+                            <img src="./assets/images/homepage/new2.jpeg" alt="Дим-самы с индейкой" />
+                        </div>
+                        <div class="new__block">
+                            <h3 class="newcard__title">Дим-самы с индейкой</h3>
+                            <div class="newcard__price">370 р</div>
+                        </div>
+                    </div>
+                    <div class="newcard">
+                        <div class="newcard__img">
+                            <img src="./assets/images/homepage/new3.jpeg" alt="Манила ролл" />
+                        </div>
+                        <div class="new__block">
+                            <h3 class="newcard__title">Манила ролл</h3>
+                            <div class="newcard__price">330 р</div>
+                        </div>
+                    </div>
+                    <div class="newcard">
+                        <div class="newcard__img">
+                            <img src="./assets/images/homepage/new4.jpeg" alt="Кумотори" />
+                        </div>
+                        <div class="new__block">
+                            <h3 class="newcard__title">Кумотори</h3>
+                            <div class="newcard__price">495 р</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="menu__title">Супы</h2>
+                <div class="cards">
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/soup1.jpeg" alt="Суп Вонтон" />
+                        </div>
+                        <h3 class="card__name">Суп Вонтон</h3>
+                        <div class="card__description">
+                            Пшеничная лапша, пак-чой, лук зеленый, куриный бульон, вонтоны с
+                            говядиной, перец чили
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">590 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/soup2.jpeg" alt="Суп-бульон с курицей и кореньями" />
+                        </div>
+                        <h3 class="card__name">Суп-бульон с курицей и кореньями</h3>
+                        <div class="card__description">
+                            Куриное бедро, ягоды годжи, имбирь, рисовое вино, каштан,
+                            сельдерей, дайкон, анис
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">460 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/soup3.jpeg" alt="Том Ям" />
+                        </div>
+                        <h3 class="card__name">Том Ям</h3>
+                        <div class="card__description">
+                            Куриный бульон, креветки, кальмар, шампиньоны, лимонник, лайм,
+                            томаты, лук, кокосовое молоко
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">860 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/soup4.jpeg" alt="Остро-кислый суп" />
+                        </div>
+                        <h3 class="card__name">Остро-кислый суп</h3>
+                        <div class="card__description">
+                            Рисовый уксус, соус соевый, имбирь, морковь, капуста китайская,
+                            грибы древесные, яйцо куриное, бамбук, перец
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">610 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/soup5.jpeg" alt="Фо с уткой" />
+                        </div>
+                        <h3 class="card__name">Фо с уткой</h3>
+                        <div class="card__description">
+                            Рисовая лапша, пак-чой, чеснок, бобовая паста, базилик, такуан,
+                            ростки сои, утка, перец чили
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">760 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/soup6.jpeg"
+                                alt="Тайваньская лапша с говядиной в бульоне" />
+                        </div>
+                        <h3 class="card__name">
+                            Тайваньская лапша с говядиной в бульоне
+                        </h3>
+                        <div class="card__description">
+                            Голяшка говяжья, мука пшеничная, пак-чок, паста бобовая, масло
+                            кунжутное, имбирь, лук зеленый
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">760 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="menu__title">Мясо и птица</h2>
+                <div class="cards">
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat1.jpeg" alt="Утка по-пекински" />
+                        </div>
+                        <h3 class="card__name">Утка по-пекински</h3>
+                        <div class="card__description">
+                            Утка, имбирь, лавр, рисовый уксус, соус хойсин, лук-порей, огурец, морковь, пшеничная мука
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">3400 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat2.jpeg" alt="Курица гунбао" />
+                        </div>
+                        <h3 class="card__name">Курица гунбао</h3>
+                        <div class="card__description">
+                            Куриное филе, лук зеленый, лук репчатый, арахис, чеснок, соус Худяо, масло райо, рисовый
+                            уксус, соус соевый, масло кунжутное, имбирь, перец сушеный чили
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">540 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat3.jpeg"
+                                alt="Курица с ананасом в кисло-сладком соусе" />
+                        </div>
+                        <h3 class="card__name">Курица с ананасом в кисло-сладком соусе</h3>
+                        <div class="card__description">
+                            Куриное бедро, крахмал, ананас, перец болгарский, морковь, лук красный, паста томатная,
+                            масло кунжутное, рисовый уксус, соус соевый
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">540 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat4.jpeg" alt="Свинина в кисло-сладком соусе" />
+                        </div>
+                        <h3 class="card__name">Свинина в кисло-сладком соусе</h3>
+                        <div class="card__description">
+                            Свинина, перец болгарский, киви, древесные грибы, паста томатная, масло кунжутное, рисовый
+                            уксус, соус соевый
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">610 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat5.jpeg" alt="Тофу Ма-По" />
+                        </div>
+                        <h3 class="card__name">Тофу Ма-По</h3>
+                        <div class="card__description">
+                            Тофу, свинина, имбирь, чеснок, бобовая паста, соус соевый, перец сушеный, соус Худяо, кинза,
+                            лук репчатый
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">490 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat6.jpeg"
+                                alt="Свинина в карамельном соусе Гу бао жоу" />
+                        </div>
+                        <h3 class="card__name">Свинина в карамельном соусе Гу бао жоу</h3>
+                        <div class="card__description">
+                            Свинина, морковь, перец болгарский, имбирь, чеснок, лук-порей, рисовый уксус, соус соевый,
+                            крахмал
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">560 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat7.jpeg"
+                                alt="Баранина по-пекински с паровыми булочками бао" />
+                        </div>
+                        <h3 class="card__name">Баранина по-пекински с паровыми булочками бао</h3>
+                        <div class="card__description">
+                            Баранина, соль, перец, фирменный соус Китайские Новости, огурец, лук-порей, морковь,
+                            пшеничная мука
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">1050 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat8.jpeg" alt="Куриные крылья" />
+                        </div>
+                        <h3 class="card__name">Куриные крылья</h3>
+                        <div class="card__description">
+                            Куриные крылья, крахмал, лук зеленый, имбирь, масло кунжутное, паста бобовая, рисовый уксус,
+                            соус соевый
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">540 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat9.jpeg" alt="Свинина с тофу и кимчи" />
+                        </div>
+                        <h3 class="card__name">Свинина с тофу и кимчи</h3>
+                        <div class="card__description">
+                            Свинина, капуста кимчи, тофу, имбирь, морковь, перец чили, лук зеленый, паста бобовая, масло
+                            кунжутное, соус соевый
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">790 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat10.jpeg" alt="Говядина в соусе черный перец" />
+                        </div>
+                        <h3 class="card__name">Говядина в соусе черный перец</h3>
+                        <div class="card__description">
+                            Говядина, лук зеленый, лук репчатый, яйцо куриное, брокколи, имбирь, чеснок, соус соевый,
+                            масло кунжутное, соус Black
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">890 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat11.jpeg" alt="Говядина с баклажаном" />
+                        </div>
+                        <h3 class="card__name">Говядина с баклажаном</h3>
+                        <div class="card__description">
+                            Говядина, баклажан, крахмал, соус соевый, масло растительное, кинза
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">640 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/meat12.jpeg" alt="Говядина по-сычуаньски" />
+                        </div>
+                        <h3 class="card__name">Говядина по-сычуаньски</h3>
+                        <div class="card__description">
+                            Говядина, сельдерей, перец чили сушеный, соевый соус, масло райо, лук зеленый, паста
+                            бобовая, семена кунжута, перец кимчи
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">890 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="menu__title">Лапша и рис</h2>
+                <div class="cards">
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/noodles1.jpeg" alt="Белый рис" />
+                        </div>
+                        <h3 class="card__name">Белый рис</h3>
+                        <div class="card__description">
+                            Приготовленный на пару белый рис
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">200 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/noodles2.jpeg" alt="Лапша по-гонконгски с уткой BBQ" />
+                        </div>
+                        <h3 class="card__name">Лапша по-гонконгски с уткой BBQ</h3>
+                        <div class="card__description">
+                            Лапша яичная, лук, ростки сои, масло кунжутное, соус соевый, соус устричный, масло
+                            растительное, утка BBQ
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">620 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/noodles3.jpeg"
+                                alt="Жареная широкая рисовая лапша хэ-фан с говядиной" />
+                        </div>
+                        <h3 class="card__name">Жареная широкая рисовая лапша хэ-фан с говядиной</h3>
+                        <div class="card__description">
+                            Рисовая лапша, говядина, лук зеленый, ростки сои, дайкон, соус соевый, соус Худяо, масло
+                            кунжутное
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">590 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/noodles4.jpeg" alt="Яичная лапша с креветками" />
+                        </div>
+                        <h3 class="card__name">Яичная лапша с креветками</h3>
+                        <div class="card__description">
+                            Яичная лапша, креветки, перец болгарский, ростки сои, морковь, лук репчатый, капуста
+                            китайская, лук зеленый, шампиньоны, имбирь, чеснок, перец, масло кунжутное, соус устричный
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">740 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/noodles5.jpeg" alt="Жареный рис с овощами" />
+                        </div>
+                        <h3 class="card__name">Жареный рис с овощами</h3>
+                        <div class="card__description">
+                            Рис, кукуруза, горох, перец болгарский, морковь, лук, чеснок, масло кунжутное
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">430 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/noodles6.jpeg" alt="Сингапурская лапша" />
+                        </div>
+                        <h3 class="card__name">Сингапурская лапша</h3>
+                        <div class="card__description">
+                            Креветка, кальмар, лапша рисовая, масло кунжутное, лук зеленый, морковь, перец болгарский,
+                            яйцо, арахис, репчатый лук, китайская капуста, рыбный
+                            соус, кунжутное масло
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">680 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/noodles7.jpeg" alt="Жареный рис Янчжоу с креветками" />
+                        </div>
+                        <h3 class="card__name">Жареный рис Янчжоу с креветками</h3>
+                        <div class="card__description">
+                            Рис, креветки, перец болгарский, морковь, лук репчатый, горох, кукуруза, чеснок, лук
+                            репчатый, масло кунжутное
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">620 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card__img">
+                            <img src="./assets/images/homepage/noodles8.jpeg" alt="Жареный рис Янчжоу с курицей" />
+                        </div>
+                        <h3 class="card__name">Жареный рис Янчжоу с курицей</h3>
+                        <div class="card__description">
+                            Рис, куриное филе, перец болгарский, морковь, лук репчатый, горох, кукуруза, чеснок, лук
+                            репчатый, масло кунжутное
+                        </div>
+                        <div class="card__group">
+                            <div class="card__price">490 р</div>
+                            <button class="card__btn">
+                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="promotion">
+                <h2 class="promotion__title">Наши<span class="promotion__title promotion__title_special">aкции</span>
+                </h2>
+                <div class="container">
+                    <div class="container__img container__img_big container__img_left">
+                        <img src="./assets/images/homepage/promo2.png" alt="Акция Вкус и польза в одном поке">
+                    </div>
+                    <div class="container__img container__img_big">
+                        <div class="container__img container__img_little">
+                            <img src="./assets/images/homepage/promo1.jpg" alt="Акция 20% скидка на всё меню">
+                        </div>
+                        <div class="container__img container__img_little"><img src="./assets/images/homepage/promo6.jpg"
+                                alt="Акция 40% скидка"></div>
+                        <div class="container__img container__img_little"><img src="./assets/images/homepage/promo4.png"
+                                alt="Акция скидка 10% на все обеды"></div>
+                        <div class="container__img container__img_little"><img src="./assets/images/homepage/promo5.jpg"
+                                alt="Акция пицца в подарок"></div>
+                    </div>
+                </div>
 
-      <footer class="footer">
-        <div class="footer__columns">
-          <div>
-            <div class="footer__logo">
-              <img src="./assets/images/promo/Logo.svg" alt="logo" />
-              <div class="footer__name">
-                <img src="./assets/images/promo/YA BAO.svg" alt="YaBao" />
-                <p class="footer__name-food">Дух китайской еды</p>
-              </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__columns">
+                <div>
+                    <div class="footer__logo">
+                        <img src="./assets/images/promo/Logo.svg" alt="logo" />
+                        <div class="footer__name">
+                            <img src="./assets/images/promo/YABAO.svg" alt="YaBao" />
+                            <p class="footer__name-food">Дух китайской еды</p>
+                        </div>
+                    </div>
+                    <div class="footer__information">
+                        <a class="footer__information-composition" href="#">Калорийность и состав</a>
+                        <a class="footer__information-right" href="#">Правовая информация</a>
+                    </div>
+                    <div>
+                        <p class="footer__information-social">Мы в соцсетях</p>
+                    </div>
+                    <div class="footer__sotialmedia">
+                        <div class="footer__sotialmedia-allmedias">
+                            <a href="#" class="footer__sotialmedia-elements">YouTube</a>
+                            <a href="#" class="footer__sotialmedia-elements">Instagram</a>
+                        </div>
+                        <div class="footer__sotialmedia-allmedias">
+                            <a href="#" class="footer__sotialmedia-elements">Facebook</a>
+                            <a href="#" class="footer__sotialmedia-elements">ВКонтакте</a>
+                        </div>
+                    </div>
+                    <div class="footer__license">
+                        <p class="footer__license-right">
+                            YaBao Все права защищены © 2021
+                        </p>
+                        <div class="footer__license-paysistem">
+                            <img src="./assets/images/promo/image23.svg" alt="visa" />
+                            <img src="./assets/images/promo/image24.svg" alt="paypal" />
+                            <img src="./assets/images/promo/image25.svg" alt="mastercard" />
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-relative">
+                    <div class="footer-questions">
+                        Остались вопросы? А мы всегда на связи:
+                    </div>
+                    <div class="footer__buttons">
+                        <div class="footer__buttons__top">
+                            <button class="footer__buttons__top-buttons">
+                                <img src="./assets/images/promo/image17.svg" alt="viber" />
+                            </button>
+                            <button class="footer__buttons__top-buttons">
+                                <img src="./assets/images/promo/image18.svg" alt="skype" />
+                            </button>
+                            <button class="footer__buttons__top-buttons">
+                                <img src="./assets/images/promo/image19.svg" alt="messages" />
+                            </button>
+                            <button class="footer__buttons__top-buttons">
+                                <img src="./assets/images/promo/image20.svg" alt="telegram" />
+                            </button>
+                        </div>
+                        <div class="footer__buttons__bottom">
+                            <button class="footer__buttons__bottom-buttons">
+                                <img src="./assets/images/promo/image21.svg" alt="facebook" />
+                            </button>
+                            <button class="footer__buttons__bottom-buttons">
+                                <img src="./assets/images/promo/image22.svg" alt="vk" />
+                            </button>
+                            <button class="footer__buttons__bottom-write">
+                                Написать нам
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__number">8 800 333-36-62</div>
+                    <div>
+                        <button class="footer__call">Заказать звонок</button>
+                    </div>
+                    <img class="logo-picrure" src="./assets/images/promo/image16.png" alt="a plat of noodles" />
+                </div>
             </div>
-            <div class="footer__information">
-              <a class="footer__information-composition" href="#"
-                >Калорийность и состав</a
-              >
-              <a class="footer__information-right" href="#"
-                >Правовая информация</a
-              >
-            </div>
-            <div>
-              <p class="footer__information-social">Мы в соцсетях</p>
-            </div>
-            <div class="footer__sotialmedia">
-              <div class="footer__sotialmedia-allmedias">
-                <a href="#" class="footer__sotialmedia-elements">YouTube</a>
-                <a href="#" class="footer__sotialmedia-elements">Instagram</a>
-              </div>
-              <div class="footer__sotialmedia-allmedias">
-                <a href="#" class="footer__sotialmedia-elements">Facebook</a>
-                <a href="#" class="footer__sotialmedia-elements">ВКонтакте</a>
-              </div>
-            </div>
-            <div class="footer__license">
-              <p class="footer__license-right">
-                YaBao Все права защищены © 2021
-              </p>
-              <div class="footer__license-paysistem">
-                <img src="./assets/images/promo/image 23.svg" alt="visa" />
-                <img src="./assets/images/promo/image 24.svg" alt="paypal" />
-                <img
-                  src="./assets/images/promo/image 25.svg"
-                  alt="mastercard"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="footer-relative">
-            <div class="footer-questions">
-              Остались вопросы? А мы всегда на связи:
-            </div>
-            <div class="footer__buttons">
-              <div class="footer__buttons__top">
-                <button class="footer__buttons__top-buttons">
-                  <img src="./assets/images/promo/image 17.svg" alt="viber" />
-                </button>
-                <button class="footer__buttons__top-buttons">
-                  <img src="/assets/images/promo/image 18.svg" alt="viber" />
-                </button>
-                <button class="footer__buttons__top-buttons">
-                  <img src="./assets/images/promo/image 19.svg" alt="viber" />
-                </button>
-                <button class="footer__buttons__top-buttons">
-                  <img src="./assets/images/promo/image 20.svg" alt="viber" />
-                </button>
-              </div>
-              <div class="footer__buttons__bottom">
-                <button class="footer__buttons__bottom-buttons">
-                  <img src="/assets/images/promo/image 21.svg" alt="viber" />
-                </button>
-                <button class="footer__buttons__bottom-buttons">
-                  <img src="./assets/images/promo/image 22.svg" alt="viber" />
-                </button>
-                <button class="footer__buttons__bottom-write">
-                  Написать нам
-                </button>
-              </div>
-            </div>
-            <div class="footer__number">8 800 333-36-62</div>
-            <div>
-              <button class="footer__call">Заказать звонок</button>
-            </div>
-            <img
-              class="logo-picrure"
-              src="/assets/images/promo/image 16.png"
-              alt="a plat of noodles"
-            />
-          </div>
-        </div>
-      </footer>
+        </footer>
     </div>
-  </body>
+</body>
+
 </html>
