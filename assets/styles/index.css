@@ -159,7 +159,15 @@ body {
 .figure__img {
   width: 100%;
 }
-
+.new {
+  position: relative;
+}
+.newcard__onion {
+  position: absolute;
+  left: -65px;
+  bottom: -45px;
+  z-index: -1;
+}
 .new__title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -180,6 +188,7 @@ body {
 
 .newcard__img img {
   height: 100%;
+  border-radius: 60px;
 }
 
 .newcard__price {
