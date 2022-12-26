@@ -140,9 +140,13 @@
   font-family: 'Montserrat';
   src: url(../fonts/montserrat-bold.ttf);
 }
+@media screen and (max-width: 1220px) {
+  .newcard__onion {
+    display: none;
+  }
+}
 
-html,
-body {
+.homepage {
   overflow-x: hidden;
 }
 
@@ -169,7 +173,6 @@ body {
   z-index: -1;
 }
 .new__title {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -192,7 +195,6 @@ body {
 }
 
 .newcard__price {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -212,7 +214,6 @@ body {
   margin: 0;
   margin-bottom: 4px;
 
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -222,6 +223,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   margin-top: 30px;
 }
 
@@ -231,7 +233,6 @@ body {
 }
 
 .menu__title {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -249,7 +250,6 @@ body {
   display: grid;
 
   margin-right: 15px;
-
   margin-bottom: 10px;
   height: auto;
 }
@@ -270,7 +270,6 @@ body {
 .card__name {
   margin-bottom: 18px;
 
-  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 24px;
   line-height: 28px;
@@ -281,7 +280,6 @@ body {
 .card__description {
   margin-bottom: 18px;
 
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 19px;
@@ -298,10 +296,10 @@ body {
 .card__price {
   display: flex;
   align-items: flex-end;
+
   margin-left: 10px;
   margin-bottom: 25px;
 
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 19px;
@@ -313,6 +311,7 @@ body {
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 0;
+
   background-color: white;
   border: none;
 }
@@ -327,7 +326,6 @@ body {
   display: flex;
   justify-content: center;
 
-  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 44px;
   line-height: 54px;
@@ -347,6 +345,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(46%, 1fr));
   grid-template-rows: auto;
+
   width: 49%;
   max-height: 352px;
 }
@@ -370,9 +369,9 @@ body {
 
 .container__btn {
   display: flex;
-
   justify-content: center;
   align-items: center;
+
   margin-top: 40px;
   width: 160px;
   height: 48px;
@@ -404,7 +403,6 @@ body {
 
   margin-top: 56px;
 
-  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -424,6 +422,9 @@ body {
 }
 button {
   cursor: pointer;
+}
+.printing-type {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* код Иры */
