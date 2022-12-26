@@ -381,6 +381,15 @@
   font-family: 'Montserrat';
   src: url(../fonts/montserrat-bold.ttf);
 }
+@media screen and (max-width: 1220px) {
+  .newcard__onion {
+    display: none;
+  }
+}
+
+.homepage {
+  overflow-x: hidden;
+}
 
 .wrapper {
   max-width: 1110px;
@@ -395,9 +404,16 @@
 .figure__img {
   width: 100%;
 }
-
+.new {
+  position: relative;
+}
+.newcard__onion {
+  position: absolute;
+  left: -65px;
+  bottom: -45px;
+  z-index: -1;
+}
 .new__title {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -405,6 +421,7 @@
 
 .newcard {
   display: flex;
+  flex-grow: 1;
 
   width: 255px;
 }
@@ -415,10 +432,10 @@
 
 .newcard__img img {
   height: 100%;
+  border-radius: 60px;
 }
 
 .newcard__price {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -438,7 +455,6 @@
   margin: 0;
   margin-bottom: 4px;
 
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -446,7 +462,9 @@
 
 .novelty {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
   margin-top: 30px;
 }
 
@@ -456,7 +474,6 @@
 }
 
 .menu__title {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -465,27 +482,35 @@
 }
 
 .cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(253px, 1fr));
+  grid-template-rows: auto;
 }
 
 .card {
-  width: 24%;
+  display: grid;
+
+  margin-right: 15px;
+  margin-bottom: 10px;
+  height: auto;
 }
 
 .card__img {
-  width: 253px;
+  width: 100%;
+  height: 253px;
 }
 
 .card__img img {
-  width: 90%;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .card__name {
   margin-bottom: 18px;
 
-  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 24px;
   line-height: 28px;
@@ -496,7 +521,6 @@
 .card__description {
   margin-bottom: 18px;
 
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 19px;
@@ -506,13 +530,17 @@
 
 .card__group {
   display: flex;
+  align-self: end;
   justify-content: space-between;
 }
 
 .card__price {
-  margin-left: 10px;
+  display: flex;
+  align-items: flex-end;
 
-  font-family: 'Montserrat', sans-serif;
+  margin-left: 10px;
+  margin-bottom: 25px;
+
   font-weight: 700;
   font-size: 22px;
   line-height: 19px;
@@ -522,8 +550,122 @@
 
 .card__btn {
   margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+
   background-color: white;
   border: none;
+}
+
+.promotion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promotion__title {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+}
+
+.promotion__title_special {
+  margin-left: 10px;
+  color: #ff2e65;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container__img_big {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(46%, 1fr));
+  grid-template-rows: auto;
+
+  width: 49%;
+  max-height: 352px;
+}
+
+.container__img_little {
+  height: 85%;
+  margin: 10px;
+}
+
+.container__img_left {
+  margin: 10px;
+}
+
+.container__img img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.container__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 40px;
+  width: 160px;
+  height: 48px;
+  border: none;
+
+  background-color: white;
+  background-image: url(../images/homepage/btn-promo.svg);
+  font-family: 'Montserrat';
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.location {
+  width: 100vw;
+  margin-top: 60px;
+  background-color: #e3ecf5;
+}
+.location__flex {
+  display: flex;
+  flex-direction: column;
+}
+.location__title {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 56px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+
+  color: #ff2e65;
+}
+.location__map {
+  margin-top: 32px;
+  margin-bottom: 74px;
+}
+.location__block {
+  display: flex;
+  justify-content: space-between;
+}
+.location__block img {
+  width: 25%;
+}
+button {
+  cursor: pointer;
+}
+.printing-type {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* код Иры */
@@ -579,11 +721,11 @@
   color: white;
 }
 
-body {
+/* body {
   margin-left: 15vw;
   margin-top: 1vw;
   margin-right: 15vw;
-}
+} */
 
 .header__menu_up {
   display: flex;
@@ -619,8 +761,4 @@ body {
   cursor: pointer;
 }
 
-button:hover {
-  box-shadow: 25px 23px 26px -9px rgba(43, 43, 43, 0.14);
-}
-
-/* код Оли */
+/* код Оли */ ;
