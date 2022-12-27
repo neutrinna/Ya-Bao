@@ -11,6 +11,7 @@
   margin-bottom: 0px;
   margin-top: 0px;
   
+  
   }
   .footer__name-food {
       font-family: 'Montserrat';
@@ -22,20 +23,24 @@
   text-transform: uppercase;
   color: #231F20;
   margin-top: 0px;
+  margin-left: 2px
+  
   }
   .footer__logo {
       display: flex;
           align-items: center;
+
   }
   .footer__name {
       margin-left: 18px;
+
   }
   .footer__information {
   margin-top: 43px;
   margin-bottom: 43px;
   display: flex;
   justify-content: space-between;
-  width: 25vw;
+  width: 458px;
   }
   .footer__information-composition {
       font-family: 'Montserrat';
@@ -47,6 +52,9 @@
       opacity: 0.85;
       text-decoration: none;
   }
+  .footer__information-composition:hover {
+    color: #FF2E65;
+  }
   .footer__information-right {
       font-family: 'Montserrat';
       font-style: normal;
@@ -57,6 +65,9 @@
       opacity: 0.85;
       text-decoration: none;
       
+  }
+  .footer__information-right:hover {
+    color: #FF2E65;
   }
   .footer__information-social {
       font-family: 'Montserrat';
@@ -70,7 +81,7 @@
   }
   .footer__sotialmedia {
       display: flex;
-      width: 20vw;
+      width: 350px;
       justify-content: space-between;
       height: 50px;
   
@@ -92,8 +103,11 @@
   opacity: 0.7;
   text-decoration: none;
   }
+  .footer__sotialmedia-elements:hover {
+    color: #FF2E65;
+  }
   .footer__license {
-      width: 31vw;
+      width: 573px;
       margin-top: 45px;
       display: flex;
       justify-content: space-between;
