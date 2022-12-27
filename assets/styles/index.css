@@ -1,4 +1,7 @@
 /* код Ани */
+.footer {
+  margin-top: 56px;
+}
 .footer__name-yabao{
   font-family: 'Panton';
   font-style: normal;
@@ -245,6 +248,7 @@
   font-size: 30px;
   line-height: 37px;
   color: #FF2E65;
+  margin-left: 10px;
   }
   .promo__cards {
       display: grid;
@@ -253,10 +257,50 @@
       gap: 30px;
   }
   .card-all{
-      border: 1px solid black;
       padding: 5px;
+      background: #FFFFFF;
+box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+border-radius: 14px;
+width: 350px;
+height: 391px;
+display: flex;
+flex-direction: column;
   }
-   
+   .promo__card-title{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 28px;
+color: #0E0C0D;
+margin-top: 13px;
+   }
+   .card-text {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 20px;
+color: #686466;
+   }
+.promo__button{
+   width: 159px;
+height: 45px;
+left: 240px;
+top: 527px;
+background: #FF2E65;
+border-radius: 8px;
+color: white;
+border: none;
+cursor: pointer;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 28px;
+}
+.promo__button:hover {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);}
  /*чей код ниже я не знаю*/
 .quantity_inner  {
   box-sizing: border-box;
