@@ -662,28 +662,202 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 /* product.html  */
+.b-popup {
+  width: 100%;
+  height: 2000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+}
 .product-card {
   display: flex;
 
+  align-items: center;
+  justify-content: space-around;
+
   width: 959px;
   height: 610px;
+
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.08);
+  border-radius: 22px;
+  background-color: white;
+}
+.product-card-wrapper {
+  display: flex;
+  position: absolute;
+  top: 100px;
+}
+.product-card__btn-close {
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.product-card__btn-close img:hover {
+  border: 1.5px solid #ff2e65;
 }
 
 .product-card__img {
+  display: flex;
+
   width: 504px;
   height: 504px;
 }
 .product-card__img img {
-  width: auto;
+  border-radius: 22px;
+  object-fit: cover;
+  width: 100%;
 }
-/* код Иры */
+.prodact-card__info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
+  height: calc(454px+25px+59px);
+  width: 349px;
+}
+.product-card__name {
+  margin-top: -10px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+}
+.product-card__description {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+
+  color: #686466;
+}
+.product-card__ingredients {
+  display: flex;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 28px;
+
+  color: #686466;
+
+  opacity: 0.6;
+}
+.product-card__close img {
+  margin-bottom: -6px;
+  cursor: pointer;
+}
+.prodact-card__size {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+
+  color: #686466;
+}
+.product-card__options {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 10px;
+
+  width: 99%;
+}
+.product-card__options button {
+  border: none;
+  background-color: white;
+
+  padding: 0;
+}
+.product-card__additions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-card__add {
+  display: grid;
+  position: relative;
+
+  margin-top: 13px;
+
+  border: 1.5px solid #e2e2e9;
+  border-radius: 12px;
+  width: 102px;
+  height: 159px;
+}
+.product-card__add:hover {
+  border: 1.5px solid #ff2e65;
+}
+.product-card__add img {
+  width: 96%;
+  margin: 2px;
+
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.product-card__add-name {
+  width: 100%;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+
+  text-align: center;
+}
+
+.product-card__add-price {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+
+  color: #ff2e65;
+}
+
+.gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  border-radius: 12px;
+  width: 102px;
+  height: 159px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(237, 237, 237, 0) 40%,
+    rgba(246, 246, 246, 0.8) 50%
+  );
+}
+
+.product-card__btn-cart {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  bottom: -10px;
+
+  width: 349px;
+  height: 59px;
+
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 28px;
+
+  color: #ffffff;
+  border: none;
+  background-color: white;
+  background: #ff2e65;
+  border-radius: 8px;
+}
+
+/* код Иры */
 
 .logo {
   width: 10vw;
 }
 
-.page__map{margin-top: 5vh;}
+.page__map {
+  margin-top: 5vh;
+}
 .header__menu_up {
   display: flex;
   justify-content: space-between;
@@ -721,19 +895,18 @@ button {
   padding-right: 1vw;
   cursor: pointer;
 }
-.map{
-  overflow:hidden;
-  padding-bottom:35%;
+.map {
+  overflow: hidden;
+  padding-bottom: 35%;
   margin-bottom: 4vh;
-  position:relative;
- 
+  position: relative;
 }
-.map iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .bonus_form {
