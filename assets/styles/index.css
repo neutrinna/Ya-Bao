@@ -678,63 +678,12 @@ button {
 }
 /* код Иры */
 
-.font__delivery {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.125em;
+
+.logo {
+  width: 10vw;
 }
 
-.font__delivery_pink {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.125em;
-  color: rgb(255, 67, 116);
-}
-
-.font__delivery-time {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.875em;
-}
-
-.font__button-call {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.875em;
-  font-weight: 700;
-  color: #696f7a;
-}
-
-.font__phone_pink {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.625em;
-  font-weight: 700;
-  color: rgb(255, 67, 116);
-}
-
-.font__menu {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.938em;
-  color: black;
-  text-decoration: none;
-}
-
-.font__menu_enter {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-  color: #696f7a;
-  text-decoration: none;
-}
-
-.font__button-basket {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  color: white;
-}
-
-/* body {
-  margin-left: 15vw;
-  margin-top: 1vw;
-  margin-right: 15vw;
-} */
-
+.page__map{margin-top: 5vh;}
 .header__menu_up {
   display: flex;
   justify-content: space-between;
@@ -749,6 +698,7 @@ button {
   padding-left: 1vw;
   padding-right: 1vw;
   cursor: pointer;
+  margin-left: 15vw;
 }
 
 .header__menu_main {
@@ -757,6 +707,9 @@ button {
   align-items: center;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
+}
+.header__menu_link:hover {
+  color: #ff2e65;
 }
 
 .button-basket {
@@ -767,6 +720,20 @@ button {
   padding-left: 1vw;
   padding-right: 1vw;
   cursor: pointer;
+}
+.map{
+  overflow:hidden;
+  padding-bottom:35%;
+  margin-bottom: 4vh;
+  position:relative;
+ 
+}
+.map iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 .bonus_form {
