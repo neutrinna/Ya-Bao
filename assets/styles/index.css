@@ -228,9 +228,13 @@
   height: 245px;
   left:300px;
   top: 180px;
-  
   z-index: -1;
   }
+@media screen and (max-width: 1475px) {
+  .logo-picrure {
+    display: none;
+  }
+}
   .footer-relative {
   position: relative;;
   }
