@@ -22,39 +22,42 @@
 
 <body class="homepage">
     <div class="wrapper">
-        <header>
-            <div class="header__menu_up">
-                <div>
-                    <img src="..\assets\images\map\icon-food.png" alt="logo" class="logo" />
-                    <img src="..\assets\images\map\yabao.png" alt="name of the restorante" class="logo-2" />
+        <header class="header">
+            <div class="header-up">
+                <div class="header-up__img">
+                    <img src="./assets/images/homepage/logo.svg" alt="logo" />
                 </div>
-                <div>
-                    <div class="font__delivery">
-                        Доставка пасты <span class="font__delivery_pink">Москва</span>
+                <div class="header-up__delivery">
+                    <div class="header-up__city printing-type">
+                        Доставка пасты <span class="header-up__city header-up__city_pink printing-type">Москва</span>
                     </div>
-                    <div class="font__delivery-time">
-                        Время доставки <span class="font__delivery_pink">&bull;</span> от 31
-                        мин
+                    <div class="header-up__time printing-type">
+                        Время доставки <span class="header-up__time_pink">&bull;</span> <span
+                            class="header-up__time printing-type"> от 31
+                            мин</span>
                     </div>
                 </div>
-                <button class="button-call font__button-call">Заказать звонок</button>
-                <div class="font__phone_pink">8 800 333-36-62</div>
+                <button class="header-up__btn-call printing-type">Заказать звонок</button>
+                <div class="header-up__number printing-type">8 800 333-36-62</div>
             </div>
-            <div class="header__menu_main">
-                <a href="#" class="font__menu header__menu_link">Мясо и птица</a>
-                <a href="#" class="font__menu header__menu_link">Супы</a>
-                <a href="#" class="font__menu header__menu_link">Салаты</a>
-                <a href="#" class="font__menu header__menu_link">Лапша и рис</a>
-                <a href="#" class="font__menu header__menu_link">Напитки</a>
-                <a href="#" class="font__menu header__menu_link">Десерты</a>
-                <a href="#" class="font__menu header__menu_link">Бакалея</a>
-                <a href="#" class="font__menu header__menu_link">Акции</a>
-                <a href="#" class="font__menu header__menu_link">Комбо</a>
-                <a href="#" class="font__menu header__menu_link">Контакты</a>
-                <a href="#" class="font__menu_enter header__menu_link">Войти</a>
-                <button class="button-basket font__button-basket">
-                    Корзина &emsp;|&emsp; 1
-                </button>
+            <div class="header-down">
+                <div class="header-down__links">
+                    <a href="#" class="header-down__link printing-type">Мясо и <br> птица</a>
+                    <a href="#" class="header-down__link printing-type">Супы</a>
+                    <a href="#" class="header-down__link printing-type">Салаты</a>
+                    <a href="#" class="header-down__link printing-type">Лапша и <br> рис</a>
+                    <a href="#" class="header-down__link printing-type">Напитки</a>
+                    <a href="#" class="header-down__link printing-type">Десерты</a>
+                    <a href="#" class="header-down__link printing-type">Бакалея</a>
+                    <a href="#" class="header-down__link printing-type">Акции</a>
+                    <a href="#" class="header-down__link printing-type">Контакты</a>
+                </div>
+                <div class="header-down__btn-link">
+                    <a href="#" class="header-down__link header-down__link_grey printing-type">Войти</a>
+                    <button class="header-down__btn">
+                        <img src="./assets/images/homepage/header-btn.svg" alt="Кнопка корзина">
+                    </button>
+                </div>
             </div>
         </header>
 
@@ -588,12 +591,12 @@
     </section>
     <div class="wrapper">
         <footer class="footer">
-            <div class="footer__columns">
+            <div class=footer__columns>
                 <div>
                     <div class="footer__logo">
-                        <img src="./assets/images/promo/Logo.svg" alt="logo" />
+                        <img src="../assets/images/promo/Logo.svg" alt="logo">
                         <div class="footer__name">
-                            <img src="./assets/images/promo/YABAO.svg" alt="YaBao" />
+                            <img src="../assets/images/promo/YABAO.svg" alt="YaBao">
                             <p class="footer__name-food">Дух китайской еды</p>
                         </div>
                     </div>
@@ -615,13 +618,11 @@
                         </div>
                     </div>
                     <div class="footer__license">
-                        <p class="footer__license-right">
-                            YaBao Все права защищены © 2021
-                        </p>
+                        <p class="footer__license-right">YaBao Все права защищены © 2021</p>
                         <div class="footer__license-paysistem">
-                            <img src="./assets/images/promo/image23.svg" alt="visa" />
-                            <img src="./assets/images/promo/image24.svg" alt="paypal" />
-                            <img src="./assets/images/promo/image25.svg" alt="mastercard" />
+                            <img src="../assets/images/promo/image23.svg" alt="visa">
+                            <img src="../assets/images/promo/image24.svg" alt="paypal">
+                            <img src="../assets/images/promo/image25.svg" alt="mastercard">
                         </div>
                     </div>
                 </div>
@@ -631,39 +632,34 @@
                     </div>
                     <div class="footer__buttons">
                         <div class="footer__buttons__top">
-                            <button class="footer__buttons__top-buttons">
-                                <img src="./assets/images/promo/image17.svg" alt="viber" />
-                            </button>
-                            <button class="footer__buttons__top-buttons">
-                                <img src="./assets/images/promo/image18.svg" alt="skype" />
-                            </button>
-                            <button class="footer__buttons__top-buttons">
-                                <img src="./assets/images/promo/image19.svg" alt="messages" />
-                            </button>
-                            <button class="footer__buttons__top-buttons">
-                                <img src="./assets/images/promo/image20.svg" alt="telegram" />
-                            </button>
+                            <button class="footer__buttons__top-buttons"><img src="../assets/images/promo/image17.svg"
+                                    alt="viber"></button>
+                            <button class="footer__buttons__top-buttons"><img src="../assets/images/promo/image18.svg"
+                                    alt="skype"></button>
+                            <button class="footer__buttons__top-buttons"><img src="../assets/images/promo/image19.svg"
+                                    alt="messages"></button>
+                            <button class="footer__buttons__top-buttons"><img src="../assets/images/promo/image20.svg"
+                                    alt="telegram"></button>
                         </div>
                         <div class="footer__buttons__bottom">
-                            <button class="footer__buttons__bottom-buttons">
-                                <img src="./assets/images/promo/image21.svg" alt="facebook" />
-                            </button>
-                            <button class="footer__buttons__bottom-buttons">
-                                <img src="./assets/images/promo/image22.svg" alt="vk" />
-                            </button>
-                            <button class="footer__buttons__bottom-write">
-                                Написать нам
-                            </button>
+                            <button class="footer__buttons__bottom-buttons"><img
+                                    src="../assets/images/promo/image21.svg" alt="facebook"></button>
+                            <button class="footer__buttons__bottom-buttons"><img
+                                    src="../assets/images/promo/image22.svg" alt="vk"></button>
+                            <button class="footer__buttons__bottom-write">Написать нам</button>
                         </div>
                     </div>
-                    <div class="footer__number">8 800 333-36-62</div>
+                    <div class="footer__number">
+                        8 800 333-36-62
+                    </div>
                     <div>
                         <button class="footer__call">Заказать звонок</button>
                     </div>
-                    <img class="logo-picrure" src="./assets/images/promo/image16.png" alt="a plat of noodles" />
+                    <img class="logo-picrure" src="../assets/images/promo/image16.png" alt="a plat of noodles">
                 </div>
             </div>
         </footer>
+
     </div>
 </body>
 
