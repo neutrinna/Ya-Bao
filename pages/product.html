@@ -2,9 +2,9 @@
 <html lang="ru" class="homepage">
 
 <head>
-    <link rel="stylesheet" href="./assets/styles/normalize.css" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="shortcut icon" href="./assets/images/icon/free-icon-food-delivery-4108800.png" type="image/png">
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../assets/styles/index.css" />
+    <link rel="shortcut icon" href="../assets/images/icon/free-icon-food-delivery-4108800.png" type="image/png">
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DM+Sans&family=Inter:wght@100;400&family=Montserrat:wght@600;700&display=swap"
         rel="stylesheet" />
@@ -12,16 +12,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/styles/fonts.css" />
+    <link rel="stylesheet" href="../assets/styles/fonts.css" />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ya-Bao</title>
+    <title>Ya-Bao. Product card</title>
 </head>
 
 <body class="homepage">
+    <div class="b-popup">
+        <div class="wrapper">
+            <div class="product-card-wrapper">
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <img src="../assets/images/product-card/duck2.jpg" alt="Новогодняя утка по-пекински">
+                    </div>
+                    <div class="prodact-card__info">
+                        <div class="product-card__name printing-type">Новогодняя утка по-пекински</div>
+                        <div class="product-card__description printing-type">400 г</div>
+                        <div class="product-card__ingredients printing-type">Утка, имбирь, лавр, сахар, соль, рисовый
+                            уксус
+                            <div class="product-card__close">
+                                <img src="../assets/images/product-card/close.svg" alt="Иконка закрыть">
+                            </div>
+                        </div>
+                        <div class="prodact-card__size printing-type">Размер порции:</div>
+                        <div class="product-card__options">
+                            <button>
+                                <img src="../assets/images/product-card/small.svg"
+                                    alt="Кнопка выбрать маленькую порцию">
+                            </button>
+                            <button>
+                                <img src="../assets/images/product-card/middle.svg" alt="Кнопка выбрать среднюю порцию">
+                            </button>
+                            <button>
+                                <img src="../assets/images/product-card/big.svg" alt="Кнопка выбрать большую порцию">
+                            </button>
+                        </div>
+                        <div class="product-card__additions">
+                            <div class="product-card__add">
+                                <img src="../assets/images/product-card/veggetables.jpeg" alt="Овощи к утке">
+                                <div class="product-card__add-name printing-type">Овощи к утке</div>
+                                <div class="product-card__add-price printing-type">170 р</div>
+                            </div>
+                            <div class="product-card__add">
+                                <img src="../assets/images/product-card/pancakes.jpeg"
+                                    alt="Пшеничные блины на пару (150г)">
+                                <div class="product-card__add-name printing-type"> Блины на пару (150г)</div>
+                                <div class="product-card__add-price printing-type">170 р</div>
+                            </div>
+                            <div class="product-card__add">
+                                <img src="../assets/images/product-card/cookies.jpeg" alt="Печенье с предсказанием">
+                                <div class="product-card__add-name printing-type">Печенье с предсказанием</div>
+                                <div class="product-card__add-price printing-type">60 р</div>
+                            </div>
+                            <div class="product-card__add">
+                                <img src="../assets/images/product-card/souse1.jpeg" alt="Соус хойсин (30 г)">
+                                <div class="product-card__add-name printing-type">Соус хойсин (30 г)</div>
+                                <div class="product-card__add-price printing-type">70 р</div>
+                                <div class="gradient"></div>
+                            </div>
+                            <div class="product-card__add">
+                                <img src="../assets/images/product-card/souse2.jpeg" alt="Соус свит-чили (30 г)">
+                                <div class="product-card__add-name printing-type">Соус свит-чили (30 г)</div>
+                                <div class="product-card__add-price printing-type">70 р</div>
+                                <div class="gradient"></div>
+                            </div>
+                            <div class="product-card__add">
+                                <img src="../assets/images/product-card/souse3.jpeg" alt="Соус чили (30 г)">
+                                <div class="product-card__add-name printing-type">Соус чили (30 г)</div>
+                                <div class="product-card__add-price printing-type">70 р</div>
+                                <div class="gradient"></div>
+                            </div>
+                        </div>
+                        <button class="product-card__btn-cart printing-type"> Добавить в корзину 2400 р
+                        </button>
+                    </div>
+                </div>
+                <div class=" product-card__btn-close">
+                    <img src="../assets/images/product-card/product-btn-close.svg" alt="Кнопка закрыть">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper">
+
         <header>
             <div class="header__menu_up">
                 <div>
@@ -59,17 +136,17 @@
         </header>
 
         <figure class="figure">
-            <img class="figure__img" src="./assets/images/homepage/main-image.svg"
+            <img class="figure__img" src="../assets/images/homepage/main-image.svg"
                 alt="Плашка YA BAO с надписью дух китайской кухни и с изображением коровы, рыбы, риса, лапши, овощей и фруктов" />
         </figure>
         <main>
             <h1 style="display: none;">YA BAO дух китайской еды</h1>
-            <section class="new">
+            <!-- <section class="new">
                 <h2 class="new__title printing-type">Новинки</h2>
                 <div class="novelty">
                     <div class="newcard">
                         <div class="newcard__img">
-                            <img src="./assets/images/homepage/new1.jpeg" alt="Рамен с говядиной" />
+                            <img src="../assets/images/homepage/new1.jpeg" alt="Рамен с говядиной" />
                         </div>
                         <div class="new__block">
                             <h3 class="newcard__title printing-type">Рамен с говядиной</h3>
@@ -78,7 +155,7 @@
                     </div>
                     <div class="newcard">
                         <div class="newcard__img">
-                            <img src="./assets/images/homepage/new2.jpeg" alt="Дим-самы с индейкой" />
+                            <img src="../assets/images/homepage/new2.jpeg" alt="Дим-самы с индейкой" />
                         </div>
                         <div class="new__block">
                             <h3 class="newcard__title printing-type">Дим-самы с индейкой</h3>
@@ -87,7 +164,7 @@
                     </div>
                     <div class="newcard">
                         <div class="newcard__img">
-                            <img src="./assets/images/homepage/new3.jpeg" alt="Манила ролл" />
+                            <img src="../assets/images/homepage/new3.jpeg" alt="Манила ролл" />
                         </div>
                         <div class="new__block">
                             <h3 class="newcard__title printing-type">Манила ролл</h3>
@@ -96,7 +173,7 @@
                     </div>
                     <div class="newcard">
                         <div class="newcard__img">
-                            <img src="./assets/images/homepage/new4.jpeg" alt="Кумотори" />
+                            <img src="../assets/images/homepage/new4.jpeg" alt="Кумотори" />
                         </div>
                         <div class="new__block">
                             <h3 class="newcard__title printing-type">Кумотори</h3>
@@ -105,15 +182,15 @@
                     </div>
                 </div>
                 <div class="newcard__onion">
-                    <img src="./assets/images/homepage/onion.svg" alt="Рисунок лука порея">
+                    <img src="../assets/images/homepage/onion.svg" alt="Рисунок лука порея">
                 </div>
-            </section>
+            </section> -->
             <section class="menu">
                 <h2 class="menu__title printing-type">Супы</h2>
                 <div class="cards">
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/soup1.jpeg" alt="Суп Вонтон" />
+                            <img src="../assets/images/homepage/soup1.jpeg" alt="Суп Вонтон" />
                         </div>
                         <h3 class="card__name printing-type">Суп Вонтон</h3>
                         <div class="card__description printing-type">
@@ -123,13 +200,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">590 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/soup2.jpeg" alt="Суп-бульон с курицей и кореньями" />
+                            <img src="../assets/images/homepage/soup2.jpeg" alt="Суп-бульон с курицей и кореньями" />
                         </div>
                         <h3 class="card__name printing-type">Суп-бульон с курицей и кореньями</h3>
                         <div class="card__description printing-type">
@@ -139,13 +216,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">460 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/soup3.jpeg" alt="Том Ям" />
+                            <img src="../assets/images/homepage/soup3.jpeg" alt="Том Ям" />
                         </div>
                         <h3 class="card__name printing-type">Том Ям</h3>
                         <div class="card__description printing-type">
@@ -155,13 +232,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">860 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/soup4.jpeg" alt="Остро-кислый суп" />
+                            <img src="../assets/images/homepage/soup4.jpeg" alt="Остро-кислый суп" />
                         </div>
                         <h3 class="card__name printing-type">Остро-кислый суп</h3>
                         <div class="card__description printing-type">
@@ -171,13 +248,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">610 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/soup5.jpeg" alt="Фо с уткой" />
+                            <img src="../assets/images/homepage/soup5.jpeg" alt="Фо с уткой" />
                         </div>
                         <h3 class="card__name printing-type">Фо с уткой</h3>
                         <div class="card__description printing-type">
@@ -187,13 +264,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">760 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/soup6.jpeg"
+                            <img src="../assets/images/homepage/soup6.jpeg"
                                 alt="Тайваньская лапша с говядиной в бульоне" />
                         </div>
                         <h3 class="card__name printing-type">
@@ -206,7 +283,7 @@
                         <div class="card__group">
                             <div class="card__price printing-type">760 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
@@ -217,7 +294,7 @@
                 <div class="cards">
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat1.jpeg" alt="Утка по-пекински" />
+                            <img src="../assets/images/homepage/meat1.jpeg" alt="Утка по-пекински" />
                         </div>
                         <h3 class="card__name printing-type">Утка по-пекински</h3>
                         <div class="card__description printing-type">
@@ -226,13 +303,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">3400 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat2.jpeg" alt="Курица гунбао" />
+                            <img src="../assets/images/homepage/meat2.jpeg" alt="Курица гунбао" />
                         </div>
                         <h3 class="card__name printing-type">Курица гунбао</h3>
                         <div class="card__description printing-type">
@@ -242,13 +319,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">540 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat3.jpeg"
+                            <img src="../assets/images/homepage/meat3.jpeg"
                                 alt="Курица с ананасом в кисло-сладком соусе" />
                         </div>
                         <h3 class="card__name printing-type">Курица с ананасом в кисло-сладком соусе</h3>
@@ -259,13 +336,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">540 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat4.jpeg" alt="Свинина в кисло-сладком соусе" />
+                            <img src="../assets/images/homepage/meat4.jpeg" alt="Свинина в кисло-сладком соусе" />
                         </div>
                         <h3 class="card__name printing-type">Свинина в кисло-сладком соусе</h3>
                         <div class="card__description printing-type">
@@ -275,13 +352,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">610 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat5.jpeg" alt="Тофу Ма-По" />
+                            <img src="../assets/images/homepage/meat5.jpeg" alt="Тофу Ма-По" />
                         </div>
                         <h3 class="card__name printing-type">Тофу Ма-По</h3>
                         <div class="card__description printing-type">
@@ -291,13 +368,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">490 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat6.jpeg"
+                            <img src="../assets/images/homepage/meat6.jpeg"
                                 alt="Свинина в карамельном соусе Гу бао жоу" />
                         </div>
                         <h3 class="card__name printing-type">Свинина в карамельном соусе Гу бао жоу</h3>
@@ -308,13 +385,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">560 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat7.jpeg"
+                            <img src="../assets/images/homepage/meat7.jpeg"
                                 alt="Баранина по-пекински с паровыми булочками бао" />
                         </div>
                         <h3 class="card__name printing-type">Баранина по-пекински с паровыми булочками бао</h3>
@@ -325,13 +402,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">1050 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat8.jpeg" alt="Куриные крылья" />
+                            <img src="../assets/images/homepage/meat8.jpeg" alt="Куриные крылья" />
                         </div>
                         <h3 class="card__name printing-type">Куриные крылья</h3>
                         <div class="card__description printing-type">
@@ -341,13 +418,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">540 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat9.jpeg" alt="Свинина с тофу и кимчи" />
+                            <img src="../assets/images/homepage/meat9.jpeg" alt="Свинина с тофу и кимчи" />
                         </div>
                         <h3 class="card__name printing-type">Свинина с тофу и кимчи</h3>
                         <div class="card__description printing-type">
@@ -357,13 +434,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">790 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat10.jpeg" alt="Говядина в соусе черный перец" />
+                            <img src="../assets/images/homepage/meat10.jpeg" alt="Говядина в соусе черный перец" />
                         </div>
                         <h3 class="card__name printing-type">Говядина в соусе черный перец</h3>
                         <div class="card__description printing-type">
@@ -373,13 +450,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">890 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat11.jpeg" alt="Говядина с баклажаном" />
+                            <img src="../assets/images/homepage/meat11.jpeg" alt="Говядина с баклажаном" />
                         </div>
                         <h3 class="card__name printing-type">Говядина с баклажаном</h3>
                         <div class="card__description printing-type">
@@ -388,13 +465,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">640 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/meat12.jpeg" alt="Говядина по-сычуаньски" />
+                            <img src="../assets/images/homepage/meat12.jpeg" alt="Говядина по-сычуаньски" />
                         </div>
                         <h3 class="card__name printing-type">Говядина по-сычуаньски</h3>
                         <div class="card__description printing-type">
@@ -404,7 +481,7 @@
                         <div class="card__group">
                             <div class="card__price printing-type">890 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
@@ -415,7 +492,7 @@
                 <div class="cards">
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/noodles1.jpeg" alt="Белый рис" />
+                            <img src="../assets/images/homepage/noodles1.jpeg" alt="Белый рис" />
                         </div>
                         <h3 class="card__name printing-type">Белый рис</h3>
                         <div class="card__description printing-type">
@@ -424,13 +501,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">200 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/noodles2.jpeg" alt="Лапша по-гонконгски с уткой BBQ" />
+                            <img src="../assets/images/homepage/noodles2.jpeg" alt="Лапша по-гонконгски с уткой BBQ" />
                         </div>
                         <h3 class="card__name printing-type">Лапша по-гонконгски с уткой BBQ</h3>
                         <div class="card__description printing-type">
@@ -440,13 +517,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">620 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/noodles3.jpeg"
+                            <img src="../assets/images/homepage/noodles3.jpeg"
                                 alt="Жареная широкая рисовая лапша хэ-фан с говядиной" />
                         </div>
                         <h3 class="card__name printing-type">Жареная широкая рисовая лапша хэ-фан с говядиной</h3>
@@ -457,13 +534,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">590 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/noodles4.jpeg" alt="Яичная лапша с креветками" />
+                            <img src="../assets/images/homepage/noodles4.jpeg" alt="Яичная лапша с креветками" />
                         </div>
                         <h3 class="card__name printing-type">Яичная лапша с креветками</h3>
                         <div class="card__description printing-type">
@@ -473,13 +550,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">740 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/noodles5.jpeg" alt="Жареный рис с овощами" />
+                            <img src="../assets/images/homepage/noodles5.jpeg" alt="Жареный рис с овощами" />
                         </div>
                         <h3 class="card__name printing-type">Жареный рис с овощами</h3>
                         <div class="card__description printing-type">
@@ -488,13 +565,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">430 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/noodles6.jpeg" alt="Сингапурская лапша" />
+                            <img src="../assets/images/homepage/noodles6.jpeg" alt="Сингапурская лапша" />
                         </div>
                         <h3 class="card__name printing-type">Сингапурская лапша</h3>
                         <div class="card__description printing-type">
@@ -505,13 +582,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">680 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/noodles7.jpeg" alt="Жареный рис Янчжоу с креветками" />
+                            <img src="../assets/images/homepage/noodles7.jpeg" alt="Жареный рис Янчжоу с креветками" />
                         </div>
                         <h3 class="card__name printing-type">Жареный рис Янчжоу с креветками</h3>
                         <div class="card__description printing-type">
@@ -521,13 +598,13 @@
                         <div class="card__group">
                             <div class="card__price printing-type">620 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
                     <section class="card">
                         <div class="card__img">
-                            <img src="./assets/images/homepage/noodles8.jpeg" alt="Жареный рис Янчжоу с курицей" />
+                            <img src="../assets/images/homepage/noodles8.jpeg" alt="Жареный рис Янчжоу с курицей" />
                         </div>
                         <h3 class="card__name printing-type">Жареный рис Янчжоу с курицей</h3>
                         <div class="card__description printing-type">
@@ -537,7 +614,7 @@
                         <div class="card__group">
                             <div class="card__price printing-type">490 р</div>
                             <button class="card__btn">
-                                <img src="./assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
+                                <img src="../assets/images/homepage/btn.svg" alt="Кнопка в корзину" />
                             </button>
                         </div>
                     </section>
@@ -549,18 +626,18 @@
                 </h2>
                 <div class="container">
                     <div class="container__img container__img_big container__img_left">
-                        <img src="./assets/images/homepage/promo2.png" alt="Акция Вкус и польза в одном поке">
+                        <img src="../assets/images/homepage/promo2.png" alt="Акция Вкус и польза в одном поке">
                     </div>
                     <div class="container__img container__img_big">
                         <div class="container__img container__img_little">
-                            <img src="./assets/images/homepage/promo1.jpg" alt="Акция 20% скидка на всё меню">
+                            <img src="../assets/images/homepage/promo1.jpg" alt="Акция 20% скидка на всё меню">
                         </div>
-                        <div class="container__img container__img_little"><img src="./assets/images/homepage/promo6.jpg"
-                                alt="Акция 40% скидка"></div>
-                        <div class="container__img container__img_little"><img src="./assets/images/homepage/promo4.png"
-                                alt="Акция скидка 10% на все обеды"></div>
-                        <div class="container__img container__img_little"><img src="./assets/images/homepage/promo5.jpg"
-                                alt="Акция пицца в подарок"></div>
+                        <div class="container__img container__img_little"><img
+                                src="../assets/images/homepage/promo6.jpg" alt="Акция 40% скидка"></div>
+                        <div class="container__img container__img_little"><img
+                                src="../assets/images/homepage/promo4.png" alt="Акция скидка 10% на все обеды"></div>
+                        <div class="container__img container__img_little"><img
+                                src="../assets/images/homepage/promo5.jpg" alt="Акция пицца в подарок"></div>
                     </div>
                 </div>
                 <button class="container__btn printing-type">Все акции
@@ -573,10 +650,10 @@
             <div class="location__flex">
                 <h2 class="location__title printing-type">Оплата и доставка</h2>
                 <div class="location__block">
-                    <img src="./assets/images/homepage/delivery1.svg" alt="Преимущества доставки">
-                    <img src="./assets/images/homepage/delivery2.svg" alt="Преимущества доставки">
-                    <img src="./assets/images/homepage/delivery3.svg" alt="Преимущества доставки">
-                    <img src="./assets/images/homepage/delivery4.svg" alt="Преимущества доставки">
+                    <img src="../assets/images/homepage/delivery1.svg" alt="Преимущества доставки">
+                    <img src="../assets/images/homepage/delivery2.svg" alt="Преимущества доставки">
+                    <img src="../assets/images/homepage/delivery3.svg" alt="Преимущества доставки">
+                    <img src="../assets/images/homepage/delivery4.svg" alt="Преимущества доставки">
                 </div>
             </div>
 
@@ -591,9 +668,9 @@
             <div class="footer__columns">
                 <div>
                     <div class="footer__logo">
-                        <img src="./assets/images/promo/Logo.svg" alt="logo" />
+                        <img src="../assets/images/promo/Logo.svg" alt="logo" />
                         <div class="footer__name">
-                            <img src="./assets/images/promo/YABAO.svg" alt="YaBao" />
+                            <img src="../assets/images/promo/YABAO.svg" alt="YaBao" />
                             <p class="footer__name-food">Дух китайской еды</p>
                         </div>
                     </div>
@@ -619,9 +696,9 @@
                             YaBao Все права защищены © 2021
                         </p>
                         <div class="footer__license-paysistem">
-                            <img src="./assets/images/promo/image23.svg" alt="visa" />
-                            <img src="./assets/images/promo/image24.svg" alt="paypal" />
-                            <img src="./assets/images/promo/image25.svg" alt="mastercard" />
+                            <img src="../assets/images/promo/image23.svg" alt="visa" />
+                            <img src="../assets/images/promo/image24.svg" alt="paypal" />
+                            <img src="../assets/images/promo/image25.svg" alt="mastercard" />
                         </div>
                     </div>
                 </div>
@@ -632,24 +709,24 @@
                     <div class="footer__buttons">
                         <div class="footer__buttons__top">
                             <button class="footer__buttons__top-buttons">
-                                <img src="./assets/images/promo/image17.svg" alt="viber" />
+                                <img src="../assets/images/promo/image17.svg" alt="viber" />
                             </button>
                             <button class="footer__buttons__top-buttons">
-                                <img src="./assets/images/promo/image18.svg" alt="skype" />
+                                <img src="../assets/images/promo/image18.svg" alt="skype" />
                             </button>
                             <button class="footer__buttons__top-buttons">
-                                <img src="./assets/images/promo/image19.svg" alt="messages" />
+                                <img src="../assets/images/promo/image19.svg" alt="messages" />
                             </button>
                             <button class="footer__buttons__top-buttons">
-                                <img src="./assets/images/promo/image20.svg" alt="telegram" />
+                                <img src="../assets/images/promo/image20.svg" alt="telegram" />
                             </button>
                         </div>
                         <div class="footer__buttons__bottom">
                             <button class="footer__buttons__bottom-buttons">
-                                <img src="./assets/images/promo/image21.svg" alt="facebook" />
+                                <img src="../assets/images/promo/image21.svg" alt="facebook" />
                             </button>
                             <button class="footer__buttons__bottom-buttons">
-                                <img src="./assets/images/promo/image22.svg" alt="vk" />
+                                <img src="../assets/images/promo/image22.svg" alt="vk" />
                             </button>
                             <button class="footer__buttons__bottom-write">
                                 Написать нам
@@ -660,7 +737,7 @@
                     <div>
                         <button class="footer__call">Заказать звонок</button>
                     </div>
-                    <img class="logo-picrure" src="./assets/images/promo/image16.png" alt="a plat of noodles" />
+                    <img class="logo-picrure" src="../assets/images/promo/image16.png" alt="a plat of noodles" />
                 </div>
             </div>
         </footer>
