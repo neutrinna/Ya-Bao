@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru" class="homepage">
+
+<head>
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../assets/styles/index.css" />
+    <link rel="shortcut icon" href="../assets/images/icon/free-icon-food-delivery-4108800.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DM+Sans&family=Inter:wght@100;400&family=Montserrat:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles/fonts.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ya-Bao</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header-order">
+            <div class="header-order__logo">
+                <img src="../assets/images/order/logo.png" alt="">
+            </div>
+            <div class="header-order__ink">
+                <img src="../assets/images/order/lnk.png" alt="">
+            </div>
+        </header>
+    </div>
+    <div class="separation-line"></div>
+    <div class="wrapper">
+        <h1 class="order-box-article printing-type">Заказ на доставку</h1>
+        <div class="order-box-info">
+            <div class="order-box-form">
+                <div class="order-box-form__element">
+                    <p class="order-box-form__text printing-type">Имя</p>
+                </div>
+                <form class="order-box-form__element" action=""><input class="order-box-form__input" type="text"
+                        name="name" id="" value="Илья"></form>
+                <div class="order-box-form__element">
+                    <p class="order-box-form__text printing-type">Номер телефона</p>
+                </div>
+                <form class="order-box-form__element" action=""><input class="order-box-form__input" type="tel"
+                        name="tel" id="" value="+7 999 999-99-99"></form>
+                <div class="order-box-form__element">
+                    <p class="order-box-form__text printing-type">Адрес доставки</p>
+                </div>
+                <form class="order-box-form__element" action=""><input class="order-box-form__input" type="text"
+                        name="adress" id="" value="ул. КИМа, д. 1, под. Последний, эт. Последний, кв. 22">
+                </form>
+                <div class="order-box-form__element">
+                    <p class="order-box-form__text printing-type">Время доставки</p>
+                </div>
+                <form class="order-box-form__element" action=""><input class="order-box-form__input" type="text"
+                        name="time" id="" value="Побыстрее"></form>
+            </div>
+
+            <div class="order-list">
+                <h2 class="order-list__text printing-type">Состав заказа</h2>
+                <div class="order-list-info">
+                    <div class="order-list-info__item">
+                        <p class="order-list-info__item_name printing-type">Комбо за 599 ₽</p>
+                        <p class="order-list-info__item_description printing-type">Средняя 30 см, традиционное тесто</p>
+                    </div>
+                    <div class="order-list-info__item_price">
+                        <p class="order-list-info__item_price_text printing-type">599₽</p>
+                    </div>
+                </div>
+                <div class="order-list-info">
+                    <div class="order-list-info__item">
+                        <p class="order-list-info__item_name printing-type">Комбо за 599 ₽</p>
+                        <p class="order-list-info__item_description printing-type">Средняя 30 см, традиционное тесто</p>
+                    </div>
+                    <div class="order-list-info__item_price">
+                        <p class="order-list-info__item_price_text printing-type">599₽</p>
+                    </div>
+                </div>
+                <div class="order-list-info">
+                    <div class="order-list-info__item">
+                        <p class="order-list-info__item_name printing-type">Комбо за 599 ₽</p>
+                        <p class="order-list-info__item_description printing-type">Средняя 30 см, традиционное тесто</p>
+                    </div>
+                    <div class="order-list-info__item_price">
+                        <p class="order-list-info__item_price_text printing-type">599₽</p>
+                    </div>
+                </div>
+                <div class="order-list-info order-list-info__sum">
+                    <div class="order-list-info__item">
+                        <p class="order-list-info__item_name printing-type">Сумма заказа</p>
+                    </div>
+                    <div class="order-list-info__item_price">
+                        <p class="order-list-info__item_price_text printing-type">1797₽</p>
+                    </div>
+                </div>
+                <div class="order-list-info__free">
+                    <p class="order-list-info__item_name order-list-info__item_name_addition printing-type">Бесплатная
+                        доставка</p>
+                </div>
+            </div>
+        </div>
+        <div class="order-promo">
+            <h2 class="order-promo_text printing-type">Промокод</h2>
+            <form class="order-promo_form">
+                <div><input class="printing-type" id="order-promo_form_input" type="text" name="" value=""
+                        placeholder="Введите промокод">
+                </div>
+                <div><input class="printing-type" id="order-promo_form_button" type="submit" value="Применить"></div>
+            </form>
+        </div>
+        <div class="order-payments">
+            <h2 class="order-payments__article printing-type">Способы оплаты</h2>
+            <div class="order-payments__option">
+                <input class="order-payments-radio" type="radio" name="state">
+                <img src="../assets/images/order/card.png" alt="">
+                <p class="order-payments__article_text printing-type">Картой на сайте</p>
+            </div>
+            <div class="order-payments__option">
+                <input class="order-payments-radio" type="radio" name="state">
+                <p class="order-payments__article_text printing-type">Наличными</p>
+            </div>
+            <div class="order-payments__option">
+                <p class="order-payments__article_que printing-type">С какой суммы подготовить сдачу?</p>
+                <input type="text" value="₽">
+                <input class="order-payments-radio" type="radio" name="state">
+                <p class="order-payments__article_que printing-type">Без сдачи</p>
+            </div>
+        </div>
+    </div>
+</body>
