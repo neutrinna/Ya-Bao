@@ -955,7 +955,7 @@ padding-left: 15px;}
   border-radius:8px;
   padding-top: 15px;
   padding-left: 15px;
-width: 86px;
+width: 65px;
 text-align: center;
 margin-right: 22px;}
 .textbox_4{margin-left: 10px;
@@ -963,7 +963,7 @@ margin-right: 22px;}
   border-radius:8px;
   padding-top: 15px;
   padding-left: 15px;
-width: 86px;
+width: 65px;
 margin-right: 22px;}
 
 .line__code_1{display: grid;
@@ -988,7 +988,25 @@ bottom: -15px;}
   margin-right: 5px;}
   .rectangle{position: relative;
     bottom: 20px;  left: 50px;}
+    .product-card__btn-close_enter {
+      position: relative;
+      right: -60px;
+     top: 5px;
+      cursor: pointer;
+    }
+    .product-card__btn-close_enter img:hover {
+      border: 1.5px solid #ff2e65;
+    }
 
+    .product-card__btn-close_enter-3 {
+      position: relative;
+      right: -105px;
+     top: 5px;
+      cursor: pointer;
+    }
+    .product-card__btn-close_enter-3 img:hover {
+      border: 1.5px solid #ff2e65;
+    }
     /*Стили Иры для страницы "delivery_time" */
     .b-popup-content-2{
       margin:92px 410px 0px auto;
@@ -1013,11 +1031,20 @@ bottom: -15px;}
        }
        .enter-2{display: flex;
         align-items: flex-start;
-      margin-bottom: 20px;  
+        
       }
       .textbox__time{margin-bottom: 15px;}
       .textbox__time:hover {
         border:2px #ff2e65 solid;
+      }
+      .product-card__btn-close_deltime {
+        position: relative;
+        left: 665px;
+       bottom: 45px;
+        cursor: pointer;
+      }
+      .product-card__btn-close_deltime img:hover {
+        border: 1.5px solid #ff2e65;
       }
 
 
