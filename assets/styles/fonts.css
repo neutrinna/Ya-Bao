@@ -39,45 +39,60 @@
   }
   /* Ira's fonts */
   .font__delivery {
-     font-family: "Montserrat", sans-serif;
-     font-size: 1.125vw;
-   }
-   .font__delivery_pink {
-     font-family: "Montserrat", sans-serif;
-     font-size: 1.125vw;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+  }
+  .font__delivery_pink {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: rgb(255, 67, 116);
+  }
+  .font__delivery-time {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
+  .font__button-call {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #696f7a;
+  }
+  .font__phone_pink {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(255, 67, 116);
+  }
+  .font__menu {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+  }
+  .font__menu_enter {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #696f7a;
+    text-decoration: none;
+  }
+  .font__button-basket {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+  /*Шрифты Иры для окон PopUp*/
+ .font__enter{ font-family: "Montserrat", sans-serif;
+   font-size: 13;
+   font-weight: 600;
+   color: #9D9D9B;}
+ .font__enter_pink{font-family: "Montserrat", sans-serif;
+   font-size: 32px;
+   font-weight: 700;
+   color: rgb(255, 67, 116);}
+   .font_changes{font-family: "Montserrat", sans-serif;
+     font-size: 14px;
+     font-weight: 600;
      color: rgb(255, 67, 116);
-   }
-   .font__delivery-time {
-     font-family: "Montserrat", sans-serif;
-     font-size: 0.875vw;
-   }
-   .font__button-call {
-     font-family: "Montserrat", sans-serif;
-     font-size: 0.875vw;
-     font-weight: 700;
-     color: #696f7a;
-   }
-   .font__phone_pink {
-     font-family: "Montserrat", sans-serif;
-     font-size: 1.625vw;
-     font-weight: 700;
-     color: rgb(255, 67, 116);
-   }
-   .font__menu {
-     font-family: "Montserrat", sans-serif;
-     font-size: 0.938vw;
-     color: black;
-     text-decoration: none;
-   }
-   .font__menu_enter {
-     font-family: "Montserrat", sans-serif;
-     font-size: 1vw;
-     font-weight: 700;
-     color: #696f7a;
-     text-decoration: none;
-   }
-   .font__button-basket {
-     font-family: "Montserrat", sans-serif;
-     font-size: 1vw;
-     color: white;
-   }
+     text-decoration: none; 
+     border-bottom: 1px dashed rgb(255, 67, 116);}
