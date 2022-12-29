@@ -1349,12 +1349,16 @@ button {
 .textbox__time {
   margin-left: 10px;
   width: 280px;
-  height: 52px;
+  height: 32px;
   border: 1px #e2e2e9 solid;
   border-radius: 8px;
-  
-  padding-left: 15px;
+    padding-left: 15px;
+    background-color: white;
+    cursor: pointer;
+    padding-top: 18px;
 }
+.time-choice{display: grid;
+grid-template-columns: 1fr 1fr;}
 
 .enter_wrapper-2 {
   padding-top: 20px;
