@@ -645,6 +645,8 @@
   flex-grow: 1;
 
   width: 255px;
+
+  cursor: pointer;
 }
 
 .newcard__img {
@@ -714,6 +716,8 @@
   margin-right: 15px;
   margin-bottom: 10px;
   height: auto;
+
+  cursor: pointer;
 }
 
 .card__img {
@@ -827,6 +831,9 @@
 
   border-radius: 20px;
   object-fit: cover;
+}
+.container__a-btn {
+  text-decoration: none;
 }
 
 .container__btn {
@@ -1262,14 +1269,14 @@ button {
 .line__phone_2 {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 2fr;
-    grid-gap: 0px;
-margin-top: 40px;
+  grid-gap: 0px;
+  margin-top: 40px;
 }
 
 .line__phone_2-2 {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr 2fr;
-    grid-gap: 0px;
+  grid-gap: 0px;
   margin-top: 40px;
   align-items: baseline;
 }
@@ -1277,49 +1284,56 @@ margin-top: 40px;
 .alarm_btn {
   position: relative;
   left: 150px;
-bottom: -15px;}
-  .font__button-basket_alarm {padding-top: 2px;}
-  .alarm_img{padding-top: 4px;
-  margin-right: 5px;}
-  .rectangle{position: relative;
-    bottom: 20px;  left: 50px;}
-   .product-card__btn-close_enter {
-      position: relative;
-      left: 650px;
-      bottom: 265px;
-      cursor: pointer;
-    } 
-    .product-card__btn-close_enter img:hover {
-      border: 1.5px solid #ff2e65;
-    }
-    .product-card__btn-close_enter-2 {
-      position: relative;
-      left: 650px;
-      bottom: 218px;
-      cursor: pointer;
-    }
-    .product-card__btn-close_enter-2 img:hover {
-      border: 1.5px solid #ff2e65;
-    }
-    .product-card__btn-close_enter-3 {
-      position: relative;
-      left: 650px;
-      bottom: 183px;
-      cursor: pointer;
-    }
-    .product-card__btn-close_enter-3 img:hover {
-      border: 1.5px solid #ff2e65;
-    }
-    .product-card__btn-close_enter-4 {
-      position: relative;
-      left: 650px;
-      bottom: 260px;
-      cursor: pointer;
-    } 
-    .product-card__btn-close_enter-4 img:hover {
-      border: 1.5px solid #ff2e65;
-    }
-    
+  bottom: -15px;
+}
+.font__button-basket_alarm {
+  padding-top: 2px;
+}
+.alarm_img {
+  padding-top: 4px;
+  margin-right: 5px;
+}
+.rectangle {
+  position: relative;
+  bottom: 20px;
+  left: 50px;
+}
+.product-card__btn-close_enter {
+  position: relative;
+  left: 650px;
+  bottom: 265px;
+  cursor: pointer;
+}
+.product-card__btn-close_enter img:hover {
+  border: 1.5px solid #ff2e65;
+}
+.product-card__btn-close_enter-2 {
+  position: relative;
+  left: 650px;
+  bottom: 218px;
+  cursor: pointer;
+}
+.product-card__btn-close_enter-2 img:hover {
+  border: 1.5px solid #ff2e65;
+}
+.product-card__btn-close_enter-3 {
+  position: relative;
+  left: 650px;
+  bottom: 183px;
+  cursor: pointer;
+}
+.product-card__btn-close_enter-3 img:hover {
+  border: 1.5px solid #ff2e65;
+}
+.product-card__btn-close_enter-4 {
+  position: relative;
+  left: 650px;
+  bottom: 260px;
+  cursor: pointer;
+}
+.product-card__btn-close_enter-4 img:hover {
+  border: 1.5px solid #ff2e65;
+}
 
 /*Стили Иры для страницы "delivery_time" */
 .b-popup-content-2 {
@@ -1372,8 +1386,6 @@ bottom: -15px;}
 .product-card__btn-close_deltime img:hover {
   border: 1.5px solid #ff2e65;
 }
-
-
 
 .bonus_form {
   display: flex;
