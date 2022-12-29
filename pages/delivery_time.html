@@ -1,223 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YaBao</title>
-    <link
-      rel="icon"
-      href="../assets/images/map/icon-food.png"
-      type="image/png"
-    />
-    <link rel="stylesheet" href="../assets/styles/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/styles/fonts.css" />
-    <link rel="stylesheet" href="../assets/styles/index.css" />
 
-    <link
-      rel="shortcut icon"
-      href="./assets/images/icon/free-icon-food-delivery-4108800.png"
-      type="image/png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DM+Sans&family=Inter:wght@100;400&family=Montserrat:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/styles/fonts.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style></style>
-  </head>
-  <body>
-    <!--Здесь весь код ниже до отметки необходимо заменить на код страницы "cart"-->
-    <div class="wrapper">
-      <div class="page__map">
-        <header>
-          <div class="header__menu_up">
-            <div>
-              <img src="../assets/images/map/logo_full.png" alt="logo" />
-            </div>
-            <div>
-              <div class="font__delivery">
-                Доставка пасты <span class="font__delivery_pink">Москва</span>
-              </div>
-              <div class="font__delivery-time">
-                Время доставки
-                <span class="font__delivery_pink">&bull;</span> от 31 мин
-              </div>
-            </div>
-            <button class="button-call font__button-call">
-              Заказать звонок
-            </button>
-            <div class="font__phone_pink">8 800 333-36-62</div>
-          </div>
-          <div class="header__menu_main">
-            <a href="#" class="font__menu header__menu_link">Мясо и птица</a>
-            <a href="#" class="font__menu header__menu_link">Супы</a>
-            <a href="#" class="font__menu header__menu_link">Салаты</a>
-            <a href="#" class="font__menu header__menu_link">Лапша и рис</a>
-            <a href="#" class="font__menu header__menu_link">Напитки</a>
-            <a href="#" class="font__menu header__menu_link">Десерты</a>
-            <a href="#" class="font__menu header__menu_link">Бакалея</a>
-            <a href="#" class="font__menu header__menu_link">Акции</a>
-            <a href="#" class="font__menu header__menu_link">Комбо</a>
-            <a href="#" class="font__menu header__menu_link">Контакты</a>
-            <a href="#" class="font__menu_enter header__menu_link">Войти</a>
-            <button class="button-basket font__button-basket">
-              Корзина &emsp;|&emsp; 1
-            </button>
-          </div>
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YaBao</title>
+  <link rel="icon" href="../assets/images/map/icon-food.png" type="image/png" />
+  <link rel="stylesheet" href="../assets/styles/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles/fonts.css" />
+  <link rel="stylesheet" href="../assets/styles/index.css" />
 
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1568.8683125985224!2d37.522756852397556!3d55.654439145074534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d3d9808df9d%3A0xf8982e55a93c9e5!2sUlitsa%20Butlerova%2C%203%D0%90%2C%20Moskva%2C%20117485!5e0!3m2!1sen!2sru!4v1671747925294!5m2!1sen!2sru"
-            width="1000"
-            height="350"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+  <link rel="shortcut icon" href="./assets/images/icon/free-icon-food-delivery-4108800.png" type="image/png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DM+Sans&family=Inter:wght@100;400&family=Montserrat:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles/fonts.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style></style>
+</head>
+
+<body>
+  <!--Здесь весь код ниже до отметки необходимо заменить на код страницы "cart"-->
+  <div class="wrapper">
+    <div class="page__map">
+      <header>
+        <div class="header__menu_up">
+          <div>
+            <img src="../assets/images/map/logo_full.png" alt="logo" />
+          </div>
+          <div>
+            <div class="font__delivery">
+              Доставка пасты <span class="font__delivery_pink">Москва</span>
+            </div>
+            <div class="font__delivery-time">
+              Время доставки
+              <span class="font__delivery_pink">&bull;</span> от 31 мин
+            </div>
+          </div>
+          <button class="button-call font__button-call">
+            Заказать звонок
+          </button>
+          <div class="font__phone_pink">8 800 333-36-62</div>
+        </div>
+        <div class="header__menu_main">
+          <a href="#" class="font__menu header__menu_link">Мясо и птица</a>
+          <a href="#" class="font__menu header__menu_link">Супы</a>
+          <a href="#" class="font__menu header__menu_link">Салаты</a>
+          <a href="#" class="font__menu header__menu_link">Лапша и рис</a>
+          <a href="#" class="font__menu header__menu_link">Напитки</a>
+          <a href="#" class="font__menu header__menu_link">Десерты</a>
+          <a href="#" class="font__menu header__menu_link">Бакалея</a>
+          <a href="#" class="font__menu header__menu_link">Акции</a>
+          <a href="#" class="font__menu header__menu_link">Комбо</a>
+          <a href="#" class="font__menu header__menu_link">Контакты</a>
+          <a href="#" class="font__menu_enter header__menu_link">Войти</a>
+          <button class="button-basket font__button-basket">
+            Корзина &emsp;|&emsp; 1
+          </button>
+        </div>
+      </header>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1568.8683125985224!2d37.522756852397556!3d55.654439145074534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d3d9808df9d%3A0xf8982e55a93c9e5!2sUlitsa%20Butlerova%2C%203%D0%90%2C%20Moskva%2C%20117485!5e0!3m2!1sen!2sru!4v1671747925294!5m2!1sen!2sru"
+          width="1000" height="350" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__columns">
+        <div>
+          <div class="footer__logo">
+            <img src="../assets/images/promo/Logo.svg" alt="logo" />
+            <div class="footer__name">
+              <img src="../assets/images/promo/YABAO.svg" alt="YaBao" />
+              <p class="footer__name-food">Дух китайской еды</p>
+            </div>
+          </div>
+          <div class="footer__information">
+            <a class="footer__information-composition" href="#">Калорийность и состав</a>
+            <a class="footer__information-right" href="#">Правовая информация</a>
+          </div>
+          <div>
+            <p class="footer__information-social">Мы в соцсетях</p>
+          </div>
+          <div class="footer__sotialmedia">
+            <div class="footer__sotialmedia-allmedias">
+              <a href="#" class="footer__sotialmedia-elements">YouTube</a>
+              <a href="#" class="footer__sotialmedia-elements">Instagram</a>
+            </div>
+            <div class="footer__sotialmedia-allmedias">
+              <a href="#" class="footer__sotialmedia-elements">Facebook</a>
+              <a href="#" class="footer__sotialmedia-elements">ВКонтакте</a>
+            </div>
+          </div>
+          <div class="footer__license">
+            <p class="footer__license-right">
+              YaBao Все права защищены © 2021
+            </p>
+            <div class="footer__license-paysistem">
+              <img src="../assets/images/promo/image23.svg" alt="visa" />
+              <img src="../assets/images/promo/image24.svg" alt="paypal" />
+              <img src="../assets/images/promo/image25.svg" alt="mastercard" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-relative">
+          <div class="footer-questions">
+            Остались вопросы? А мы всегда на связи:
+          </div>
+          <div class="footer__buttons">
+            <div class="footer__buttons__top">
+              <button class="footer__buttons__top-buttons">
+                <img src="../assets/images/promo/image17.svg" alt="viber" />
+              </button>
+              <button class="footer__buttons__top-buttons">
+                <img src="../assets/images/promo/image18.svg" alt="skype" />
+              </button>
+              <button class="footer__buttons__top-buttons">
+                <img src="../assets/images/promo/image19.svg" alt="messages" />
+              </button>
+              <button class="footer__buttons__top-buttons">
+                <img src="../assets/images/promo/image20.svg" alt="telegram" />
+              </button>
+            </div>
+            <div class="footer__buttons__bottom">
+              <button class="footer__buttons__bottom-buttons">
+                <img src="../assets/images/promo/image21.svg" alt="facebook" />
+              </button>
+              <button class="footer__buttons__bottom-buttons">
+                <img src="../assets/images/promo/image22.svg" alt="vk" />
+              </button>
+              <button class="footer__buttons__bottom-write">
+                Написать нам
+              </button>
+            </div>
+          </div>
+          <div class="footer__number">8 800 333-36-62</div>
+          <div>
+            <button class="footer__call">Заказать звонок</button>
+          </div>
+          <img class="logo-picrure" src="../assets/images/promo/image16.png" alt="a plat of noodles" />
         </div>
       </div>
-      <footer class="footer">
-        <div class="footer__columns">
-          <div>
-            <div class="footer__logo">
-              <img src="../assets/images/promo/Logo.svg" alt="logo" />
-              <div class="footer__name">
-                <img src="../assets/images/promo/YABAO.svg" alt="YaBao" />
-                <p class="footer__name-food">Дух китайской еды</p>
-              </div>
-            </div>
-            <div class="footer__information">
-              <a class="footer__information-composition" href="#"
-                >Калорийность и состав</a
-              >
-              <a class="footer__information-right" href="#"
-                >Правовая информация</a
-              >
-            </div>
-            <div>
-              <p class="footer__information-social">Мы в соцсетях</p>
-            </div>
-            <div class="footer__sotialmedia">
-              <div class="footer__sotialmedia-allmedias">
-                <a href="#" class="footer__sotialmedia-elements">YouTube</a>
-                <a href="#" class="footer__sotialmedia-elements">Instagram</a>
-              </div>
-              <div class="footer__sotialmedia-allmedias">
-                <a href="#" class="footer__sotialmedia-elements">Facebook</a>
-                <a href="#" class="footer__sotialmedia-elements">ВКонтакте</a>
-              </div>
-            </div>
-            <div class="footer__license">
-              <p class="footer__license-right">
-                YaBao Все права защищены © 2021
-              </p>
-              <div class="footer__license-paysistem">
-                <img src="../assets/images/promo/image23.svg" alt="visa" />
-                <img src="../assets/images/promo/image24.svg" alt="paypal" />
-                <img
-                  src="../assets/images/promo/image25.svg"
-                  alt="mastercard"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="footer-relative">
-            <div class="footer-questions">
-              Остались вопросы? А мы всегда на связи:
-            </div>
-            <div class="footer__buttons">
-              <div class="footer__buttons__top">
-                <button class="footer__buttons__top-buttons">
-                  <img src="../assets/images/promo/image17.svg" alt="viber" />
-                </button>
-                <button class="footer__buttons__top-buttons">
-                  <img src="../assets/images/promo/image18.svg" alt="skype" />
-                </button>
-                <button class="footer__buttons__top-buttons">
-                  <img
-                    src="../assets/images/promo/image19.svg"
-                    alt="messages"
-                  />
-                </button>
-                <button class="footer__buttons__top-buttons">
-                  <img
-                    src="../assets/images/promo/image20.svg"
-                    alt="telegram"
-                  />
-                </button>
-              </div>
-              <div class="footer__buttons__bottom">
-                <button class="footer__buttons__bottom-buttons">
-                  <img
-                    src="../assets/images/promo/image21.svg"
-                    alt="facebook"
-                  />
-                </button>
-                <button class="footer__buttons__bottom-buttons">
-                  <img src="../assets/images/promo/image22.svg" alt="vk" />
-                </button>
-                <button class="footer__buttons__bottom-write">
-                  Написать нам
-                </button>
-              </div>
-            </div>
-            <div class="footer__number">8 800 333-36-62</div>
-            <div>
-              <button class="footer__call">Заказать звонок</button>
-            </div>
-            <img
-              class="logo-picrure"
-              src="../assets/images/promo/image16.png"
-              alt="a plat of noodles"
-            />
-          </div>
-        </div>
-      </footer>
-    </div>
-    <!--До этой отметки. Пока взяла свой код "map" для более корректного отображения страницы-->
-    <div class="b-popup">
-      <div class="b-popup-content-2">
-        <div class="enter_wrapper-2">
-          <div>
-            <div class="font__phone_pink enter-2">Время доставки</div>
+    </footer>
+  </div>
+  <!--До этой отметки. Пока взяла свой код "map" для более корректного отображения страницы-->
+  <div class="b-popup">
+    <div class="b-popup-content-2">
+      <div class="enter_wrapper-2">
+        <div>
+          <div class="font__phone_pink enter-2">Время доставки</div>
 
-            <textarea class="font__menu textbox__time">Побыстрее</textarea>
-            <textarea class="font__menu textbox__time">15:00 - 15:30</textarea>
-            <textarea class="font__menu textbox__time">15:30 - 16:00</textarea>
-            <textarea class="font__menu textbox__time">16:00 - 16:30</textarea>
-            <textarea class="font__menu textbox__time">16:30 - 17:00</textarea>
-            <textarea class="font__menu textbox__time">17:00 - 17:30</textarea>
-            <textarea class="font__menu textbox__time">17:30 - 18:00</textarea>
-            <textarea class="font__menu textbox__time">18:00 - 18:30</textarea>
-            <textarea class="font__menu textbox__time">18:30 - 19:00</textarea>
-            <textarea class="font__menu textbox__time">19:00 - 19:30</textarea>
-          </div>
-          <div class="product-card__btn-close_deltime">
-            <img
-              src="../assets/images/product-card/product-btn-close.svg"
-              alt="Кнопка закрыть"
-            />
-          </div>
+          <textarea class="font__menu textbox__time">Побыстрее</textarea>
+          <textarea class="font__menu textbox__time">15:00 - 15:30</textarea>
+          <textarea class="font__menu textbox__time">15:30 - 16:00</textarea>
+          <textarea class="font__menu textbox__time">16:00 - 16:30</textarea>
+          <textarea class="font__menu textbox__time">16:30 - 17:00</textarea>
+          <textarea class="font__menu textbox__time">17:00 - 17:30</textarea>
+          <textarea class="font__menu textbox__time">17:30 - 18:00</textarea>
+          <textarea class="font__menu textbox__time">18:00 - 18:30</textarea>
+          <textarea class="font__menu textbox__time">18:30 - 19:00</textarea>
+          <textarea class="font__menu textbox__time">19:00 - 19:30</textarea>
+        </div>
+        <div class="product-card__btn-close_deltime">
+          <img src="../assets/images/product-card/product-btn-close.svg" alt="Кнопка закрыть" />
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
