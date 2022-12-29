@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YA BAO</title>
-    <link rel="stylesheet" href="../assets/fonts/">
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YA BAO</title>
+  <link rel="stylesheet" href="../assets/fonts/">
+
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link
     href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DM+Sans&family=Inter:wght@100;400&family=Montserrat:wght@600;700&display=swap"
     rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,102 +18,373 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+  <link rel="stylesheet" href="../styles/index.css">
+
+  <style>
+    @font-face {
+      font-family: 'Montserrat';
+      src: url(../fonts/montserrat-bold.ttf);
+    }
+
+    .printing-type {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .homepage {
+      overflow-x: hidden;
+    }
+
+    .header-up {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-up__img {
+      margin-top: 8px;
+    }
+
+    .header-up__delivery {
+      margin-right: 50px;
+    }
+
+    .header-up__city {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+
+      color: #231f20;
+    }
+
+    .header-up__city_pink {
+      color: #ff2e65;
+    }
+
+    .header-up__time {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+
+      color: #231f20;
+    }
+
+    .header-up__time_pink {
+      color: #ff2e65;
+    }
+
+    .header-up__btn-call {
+      width: 180px;
+      height: 42px;
+      margin-left: 70px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 28px;
+
+      color: #696f7a;
+      border: none;
+      background: #f3f3f7;
+      border-radius: 28px;
+    }
+
+    .header-up__number {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 32px;
+
+      text-transform: uppercase;
+
+      color: #ff2e65;
+    }
+
+    .header-down {
+      display: flex;
+      justify-content: space-between;
+
+      margin-top: 20px;
+    }
+
+    .header-down__links {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .header-down__link {
+      align-items: center;
+      margin-right: 15px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+
+      color: #0e0c0d;
+      text-decoration: none;
+    }
+
+    .header-down__link:hover {
+      color: #ff2e65;
+    }
+
+    .header-down__link_grey {
+      display: flex;
+      align-items: flex-start;
+
+      margin-right: 3vw;
+      font-weight: 700;
+      font-size: 16px;
+
+      color: #696f7a;
+    }
+
+    .header-down__btn-link {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .header-down__btn {
+      margin-top: -13px;
+
+      border: none;
+      background-color: white;
+    }
+
+    .bonus {
+      width: 100vw;
+      height: 559px;
+      left: 0px;
+      top: 149px;
+      background: #E3ECF5;
+    }
+
+    .bonus_form {
+      position: absolute;
+      width: 255px;
+      height: 338px;
+      left: 220px;
+      top: 266px;
+      align-content: center;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+    }
+
+    .bonus_image {
+      width: 121px;
+      height: 117px;
+      left: 287px;
+      top: 299px;
+      align-self: center;
+    }
+
+    .bouns_text {
+      width: 179px;
+      height: 44px;
+      left: 258px;
+      top: 446px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: #686466;
+    }
+
+    .form {
+      font-size: 15px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .form * {
+      box-sizing: border-box;
+      line-height: 1.5;
+    }
+
+    .form__title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 37px;
+      color: #FF2E65;
+    }
+
+    .form__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form__item>* {
+      align-self: flex-start;
+    }
+
+    .form__label {
+      font-weight: 600;
+      padding: 10px 0;
+    }
+
+    .form__input {
+      -webkit-appearance: none;
+      width: 100%;
+      max-width: 425px;
+      /* Fix for Safari/iOS date fields */
+      min-height: calc(0.9em + (0.8em * 2) + 0.6em);
+      padding: 0.8em;
+      font-size: 0.9em;
+      font-family: "Source Sans Pro", sans-serif;
+      outline: none;
+      border: 1px solid #DDDDDD;
+      border-radius: 4px;
+      background: #F9F9F9;
+      transition: background 0.25s, border-color 0.25s, color 0.25s;
+    }
+
+    .form__input:focus {
+      background: #FFFFFF;
+    }
+
+    .form__input::placeholder {
+      color: #BBBBBB;
+    }
+
+    .form__input--error {
+      color: #D50000;
+      background: #FFF8F8;
+      border-color: #D50000;
+    }
+
+    .form__input--error::placeholder {
+      color: #FFBFBF;
+    }
+
+    .form__error {
+      padding-top: 10px;
+      color: #D50000;
+      font-size: 0.9em;
+      visibility: hidden;
+    }
+
+    .form__input--error+.form__error {
+      visibility: visible;
+    }
+
+    .form__input--small {
+      max-width: 250px;
+    }
+
+    textarea.form__input {
+      resize: none;
+      min-height: 200px;
+    }
+
+    .form__btn {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 10px 16px;
+      margin: 10px 0;
+      color: #696F7A;
+      background: #E3ECF5;
+      border: 2px solid #E3ECF5;
+      border-radius: 8px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .form__btn:active {
+      background: #FF2E65;
+    }
+  </style>
+</head>
 
 <body>
-     <header>
-        <div class="header__menu_up">
-          <div>
-            <img
-              src="..\assets\images\map\icon-food.png"
-              alt="logo"
-              class="logo"
-            />
-            <img
-              src="..\assets\images\map\yabao.png"
-              alt="name of the restorante"
-              class="logo-2"
-            />
-          </div>
-          <div>
-            <div class="font__delivery">
-              Доставка пасты <span class="font__delivery_pink">Москва</span>
-            </div>
-            <div class="font__delivery-time">
-              Время доставки <span class="font__delivery_pink">&bull;</span> от 31
-              мин
-            </div>
-          </div>
-          <button class="button-call font__button-call">Заказать звонок</button>
-          <div class="font__phone_pink">8 800 333-36-62</div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-up">
+        <div class="header-up__img">
+          <img src="../assets/images/homepage/logo.svg" alt="logo" />
         </div>
-        <div class="header__menu_main">
-          <a href="#" class="font__menu header__menu_link">Мясо и птица</a>
-          <a href="#" class="font__menu header__menu_link">Супы</a>
-          <a href="#" class="font__menu header__menu_link">Салаты</a>
-          <a href="#" class="font__menu header__menu_link">Лапша и рис</a>
-          <a href="#" class="font__menu header__menu_link">Напитки</a>
-          <a href="#" class="font__menu header__menu_link">Десерты</a>
-          <a href="#" class="font__menu header__menu_link">Бакалея</a>
-          <a href="#" class="font__menu header__menu_link">Акции</a>
-          <a href="#" class="font__menu header__menu_link">Комбо</a>
-          <a href="#" class="font__menu header__menu_link">Контакты</a>
-          <a href="#" class="font__menu_enter header__menu_link">Войти</a>
-          <button class="button-basket font__button-basket">
-            Корзина &emsp;|&emsp; 1
+        <div class="header-up__delivery">
+          <div class="header-up__city printing-type">
+            Доставка пасты <span class="header-up__city header-up__city_pink printing-type">Москва</span>
+          </div>
+          <div class="header-up__time printing-type">
+            Время доставки <span class="header-up__time_pink">&bull;</span> <span class="header-up__time printing-type">
+              от 31
+              мин</span>
+          </div>
+        </div>
+        <button class="header-up__btn-call printing-type">Заказать звонок</button>
+        <div class="header-up__number printing-type">8 800 333-36-62</div>
+      </div>
+      <div class="header-down">
+        <div class="header-down__links">
+          <a href="#" class="header-down__link printing-type">Мясо и <br> птица</a>
+          <a href="#" class="header-down__link printing-type">Супы</a>
+          <a href="#" class="header-down__link printing-type">Салаты</a>
+          <a href="#" class="header-down__link printing-type">Лапша и <br> рис</a>
+          <a href="#" class="header-down__link printing-type">Напитки</a>
+          <a href="#" class="header-down__link printing-type">Десерты</a>
+          <a href="#" class="header-down__link printing-type">Бакалея</a>
+          <a href="#" class="header-down__link printing-type">Акции</a>
+          <a href="#" class="header-down__link printing-type">Контакты</a>
+        </div>
+        <div class="header-down__btn-link">
+          <a href="../pages/enter_1.html" class="header-down__link header-down__link_grey printing-type">Войти</a>
+          <button class="header-down__btn">
+            <a href="../pages/cart.html">
+              <img src="../assets/images/homepage/header-btn.svg" alt="Кнопка корзина"></a>
           </button>
         </div>
-      </header>
-          <div class="bonus">
-          <div class="wrapper-bonus">
-            <h1 class="title_main">Мои бонусы</h1>
-            <div class="bonus__form">
-                <img src="../assets/images/cart/gift.svg" alt="Gift" class="bonus__image">
-                <div class="bouns__text">Бонусы появятся здесь после заказа</div>
-            </div>
-          </div>
+      </div>
+    </header>
+  </div>
+  <div class="bonus">
+    <div class="wraper-bonus">
+      <h1 class="title_main">Мои бонусы</h1>
+      <div class="bonus_form">
+        <img clas="bonus_image" src="../images/cart/gift.svg" alt="Gift">
+        <div class="bouns_text">Бонусы появятся здесь после заказа</div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <main>
+      <form class="form" action="./" method="POST">
+        <div class="form__title">Личные данные</div>
+        <div class="form__item">
+          <label for="givennames" class="form__label">Имя</label>
+          <input type="text" class="form__input" name="givennames" id="givennames" placeholder="Имя">
+          <span class="form__error"></span>
         </div>
-        <div class="wrapper">
-            <main>
-            <form class="form" action="./" method="POST">
-                <div class="form__title">Личные данные</div>
-                  <div class="form__item">
-                  <label for="givennames" class="form__label">Имя</label>
-                  <input type="text" class="form__input" name="givennames" id="givennames" placeholder="Имя">
-                  <span class="form__error"></span>
-                </div>
-                <div class="form__item">
-                  <label for="phone" class="form__label">Номер телефона</label>
-                  <input type="phone" class="form__input form__input--small" name="phone" id="phone" placeholder="+7 999 999-99-99">
-                  <span class="form__error">A sample error message</span>
-                </div>
-                <div class="form__item">
-                  <label for="date" class="form__label">Дата</label>
-                  <input type="date" class="form__input form__input--small" name="date" id="date" placeholder="Введите дату">
-                  <span class="form__error">A sample error message</span>
-                </div>
-                <div class="form__item">
-                  <label for="e-mail" class="form__label">E-mail</label>
-                  <input type="e-mail" class="form__input form__input--small" name="e-mail" id="e-mail" placeholder="Введите e-mail">
-                  <span class="form__error">A sample error message</span>
-                </div>
-                <div class="form__item">
-                  <label for="password" class="form__label">Пароль</label>
-                  <input type="phone" class="form__input form__input--small" name="password" id="password" placeholder="123">
-                  <span class="form__error">A sample error message</span>
-                </div>
-                <h2 class="title">Подписки</h2>
-                <div class="input"></div>
-                 <label class="radio">
-                      <input type="radio" value="info" id="information" name="yes"> Сообщать о бонусах, акциях и новых продуктах
-                    </label>  
-                <div class="form__item">
-                  <button class="form__btn" type="submit">Выйти</button>
-                </div>
-              </form>
-
+        <div class="form__item">
+          <label for="phone" class="form__label">Номер телефона</label>
+          <input type="phone" class="form__input form__input--small" name="phone" id="phone"
+            placeholder="+7 999 999-99-99">
+          <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__item">
+          <label for="date" class="form__label">Дата</label>
+          <input type="date" class="form__input form__input--small" name="date" id="date" placeholder="Введите дату">
+          <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__item">
+          <label for="e-mail" class="form__label">E-mail</label>
+          <input type="e-mail" class="form__input form__input--small" name="e-mail" id="e-mail"
+            placeholder="Введите e-mail">
+          <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__item">
+          <label for="password" class="form__label">Пароль</label>
+          <input type="phone" class="form__input form__input--small" name="password" id="password" placeholder="123">
+          <span class="form__error">A sample error message</span>
+        </div>
+        <h2 class="title">Подписки</h2>
+        <div class="input"></div>
+        <label class="radio">
+          <input type="radio" value="info" id="information" name="yes"> Сообщать о бонусах, акциях и новых продуктах
+        </label>
+        <div class="form__item">
+          <button class="form__btn" type="submit">Выйти</button>
+        </div>
       </form>
-
+      </form>
     </main>
     <footer class="footer">
       <div class=footer__columns>
