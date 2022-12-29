@@ -1104,10 +1104,6 @@ button {
 
 /* код Иры */
 
-.logo {
-  width: 10vw;
-}
-
 .page__map {
   margin-top: 5vh;
 }
@@ -1242,9 +1238,6 @@ button {
   margin-right: 22px;
 }
 
-/* width: 65px;
-text-align: center;
-margin-right: 22px;} */
 .textbox_4 {
   margin-left: 10px;
   border: 1px #ff2e65 solid;
@@ -1269,12 +1262,14 @@ margin-right: 22px;} */
 .line__phone_2 {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 2fr;
-  margin-top: 40px;
+    grid-gap: 0px;
+margin-top: 40px;
 }
 
 .line__phone_2-2 {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr 2fr;
+    grid-gap: 0px;
   margin-top: 40px;
   align-items: baseline;
 }
@@ -1282,112 +1277,49 @@ margin-right: 22px;} */
 .alarm_btn {
   position: relative;
   left: 150px;
-  bottom: -15px;
-}
-
-.font__button-basket_alarm {
-  padding-top: 2px;
-}
-
-.alarm_img {
-  padding-top: 4px;
-  margin-right: 5px;
-}
-
-.rectangle {
-  position: relative;
-  bottom: 20px;
-  left: 50px;
-}
-
-/* bottom: -15px;} */
-.font__button-basket_alarm {
-  padding-top: 2px;
-}
-
-.alarm_img {
-  padding-top: 4px;
-  margin-right: 5px;
-}
-
-.rectangle {
-  position: relative;
-  bottom: 20px;
-  left: 50px;
-}
-
-.product-card__btn-close_enter {
-  position: relative;
-  right: -60px;
-  top: 5px;
-  cursor: pointer;
-}
-
-.product-card__btn-close_enter img:hover {
-  border: 1.5px solid #ff2e65;
-}
-
-.product-card__btn-close_enter-3 {
-  position: relative;
-  right: -105px;
-  top: 5px;
-  cursor: pointer;
-}
-
-.product-card__btn-close_enter-3 img:hover {
-  border: 1.5px solid #ff2e65;
-}
-
-/*Стили Иры для страницы "delivery_time" */
-.b-popup-content-2 {
-  margin: 92px 410px 0px auto;
-  width: 668px;
-  height: 454px;
-  padding: 10px;
-  background-color: #e3ecf5;
-  border-radius: 12px;
-  box-shadow: 0 4 28 0 #000000 8%;
-  display: flex;
-  justify-items: center;
-}
-
-.textbox__time {
-  margin-left: 10px;
-  width: 280px;
-  border: 1px #e2e2e9 solid;
-  border-radius: 8px;
-  padding-top: 15px;
-  padding-left: 15px;
-}
-
-.enter_wrapper-2 {
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
-.enter-2 {
-  display: flex;
-  align-items: flex-start;
-}
-
-.textbox__time {
-  margin-bottom: 15px;
-}
-
-.textbox__time:hover {
-  border: 2px #ff2e65 solid;
-}
-
-.product-card__btn-close_deltime {
-  position: relative;
-  left: 665px;
-  bottom: 45px;
-  cursor: pointer;
-}
-
-.product-card__btn-close_deltime img:hover {
-  border: 1.5px solid #ff2e65;
-}
+bottom: -15px;}
+  .font__button-basket_alarm {padding-top: 2px;}
+  .alarm_img{padding-top: 4px;
+  margin-right: 5px;}
+  .rectangle{position: relative;
+    bottom: 20px;  left: 50px;}
+   .product-card__btn-close_enter {
+      position: relative;
+      left: 650px;
+      bottom: 265px;
+      cursor: pointer;
+    } 
+    .product-card__btn-close_enter img:hover {
+      border: 1.5px solid #ff2e65;
+    }
+    .product-card__btn-close_enter-2 {
+      position: relative;
+      left: 650px;
+      bottom: 218px;
+      cursor: pointer;
+    }
+    .product-card__btn-close_enter-2 img:hover {
+      border: 1.5px solid #ff2e65;
+    }
+    .product-card__btn-close_enter-3 {
+      position: relative;
+      left: 650px;
+      bottom: 183px;
+      cursor: pointer;
+    }
+    .product-card__btn-close_enter-3 img:hover {
+      border: 1.5px solid #ff2e65;
+    }
+    .product-card__btn-close_enter-4 {
+      position: relative;
+      left: 650px;
+      bottom: 260px;
+      cursor: pointer;
+    } 
+    .product-card__btn-close_enter-4 img:hover {
+      border: 1.5px solid #ff2e65;
+    }
+    
 
 /*Стили Иры для страницы "delivery_time" */
 .b-popup-content-2 {
@@ -1427,8 +1359,21 @@ margin-right: 22px;} */
 }
 
 .textbox__time:hover {
-  border: 2px #ff2e65 solid;
+  border: 1px #ff2e65 solid;
 }
+
+.product-card__btn-close_deltime {
+  position: relative;
+  left: 665px;
+  bottom: 440px;
+  cursor: pointer;
+}
+
+.product-card__btn-close_deltime img:hover {
+  border: 1.5px solid #ff2e65;
+}
+
+
 
 .bonus_form {
   display: flex;
