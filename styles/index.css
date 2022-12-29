@@ -100,26 +100,23 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 .cards_wrapper {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .box {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border: 2px solid #ffffff;
-  padding: 5px 40px;
+  border-radius: 25px;
+  border: 1.5px solid #ffffff;
+  padding: 5px 5px;
   background: #ffffff;
 }
 
 .box:hover {
   border-color: #ff2e65;
+  color: #ff2e65;
 }
-.card img {
-  max-width: 100%;
-  max-height: 100%;
-}
+
 .container_additive {
   display: flex;
   flex-wrap: wrap;
@@ -203,15 +200,26 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 28px;
+
   color: rgba(35, 31, 32, 0.8);
 }
+.footer_button a:hover {
+  text-decoration: none;
+  color: white;
+}
+.footer_back a:hover {
+  text-decoration: none;
+  color: rgba(35, 31, 32, 0.8);
+}
+
 .button_order {
   color: #ffffff;
   background: #ff2e65;
   padding: 1rem 1.5rem;
   border: 0;
   border-radius: 8px;
-  text-decoration: none;
+
+  cursor: pointer;
 }
 
 .footer__name-yabao {
@@ -561,17 +569,14 @@ textarea.form__input {
 }
 
 .form__btn {
-  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   font-size: 16px;
   padding: 10px 16px;
   margin: 10px 0;
-
   color: #696f7a;
   background: #e3ecf5;
   border: 2px solid #e3ecf5;
   border-radius: 8px;
-
   cursor: pointer;
   outline: none;
 }
