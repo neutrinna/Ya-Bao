@@ -860,7 +860,6 @@
 .location {
   width: 100vw;
   margin-top: 60px;
-  margin-bottom: 60px;
   background-color: #e3ecf5;
 }
 
@@ -1111,9 +1110,9 @@ button {
 
 /* код Иры */
 
-.page__map {
+/* .page__map {
   margin-top: 5vh;
-}
+} */
 
 .header__menu_up {
   display: flex;
@@ -1268,14 +1267,14 @@ button {
 
 .line__phone_2 {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr 2fr;
+  grid-template-columns: 2.5fr 2.4fr 1fr 1.8fr;
   grid-gap: 0px;
   margin-top: 40px;
 }
 
 .line__phone_2-2 {
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr 2fr;
+  grid-template-columns: 2.5fr 1.7fr 2.3fr 2fr;
   grid-gap: 0px;
   margin-top: 40px;
   align-items: baseline;
