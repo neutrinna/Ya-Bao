@@ -1118,6 +1118,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  
 }
 
 .button-call {
@@ -1215,42 +1216,36 @@ button {
   padding-top: 30px;
 }
 
+/*NEW 29.12_15.37*/
 .textbox {
   margin-left: 10px;
   border: 1px #e2e2e9 solid;
   border-radius: 8px;
-  padding-top: 15px;
+  width: 255px;
+  height: 48px;
+  
   padding-left: 15px;
 }
 
+/*NEW 29.12_15.37*/
 .textbox_2 {
-  margin-left: 10px;
+  
   border: 1px #e2e2e9 solid;
+  margin-right: 15px;
   border-radius: 8px;
-  padding-top: 15px;
-  padding-left: 15px;
   width: 86px;
+  height: 48px;
   text-align: center;
-  margin-right: 22px;
 }
 
+/*NEW 29.12_15.37*/
 .textbox_4 {
   margin-left: 10px;
   border: 1px #ff2e65 solid;
   border-radius: 8px;
-  padding-top: 15px;
-  padding-left: 15px;
   width: 86px;
-  margin-right: 22px;
-}
-
-.textbox_4 {
-  margin-left: 10px;
-  border: 1px #ff2e65 solid;
-  border-radius: 8px;
-  padding-top: 15px;
+  height: 48px;
   padding-left: 15px;
-  width: 65px;
   margin-right: 22px;
 }
 
@@ -1347,12 +1342,14 @@ button {
   justify-items: center;
 }
 
+/*NEW 29.12_15.37*/
 .textbox__time {
   margin-left: 10px;
   width: 280px;
+  height: 52px;
   border: 1px #e2e2e9 solid;
   border-radius: 8px;
-  padding-top: 15px;
+  
   padding-left: 15px;
 }
 
