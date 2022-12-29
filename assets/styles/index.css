@@ -1449,7 +1449,12 @@ button {
   color: #231f20;
   opacity: 0.7;
 }
-
+#order-promo_form_button:hover {
+  cursor: pointer;
+}
+#order-return__button:hover {
+  cursor: pointer;
+}
 .order-box-form__input {
   width: 460px;
   height: 48px;
@@ -1672,6 +1677,7 @@ button {
 }
 .order-return__button {
   margin-top: -60px;
+  width: 740px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
