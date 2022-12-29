@@ -276,7 +276,8 @@
   font-size: 30px;
   line-height: 37px;
   color: #ff2e65;
-  margin-left: 10px;
+  margin-top: 29px;
+  margin-bottom: 25px;
 }
 
 .promo__cards {
@@ -291,7 +292,6 @@
   background: #ffffff;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
   border-radius: 14px;
-  width: 350px;
   height: 391px;
   display: flex;
   flex-direction: column;
