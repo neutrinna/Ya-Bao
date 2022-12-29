@@ -1086,6 +1086,10 @@ button {
     rgba(246, 246, 246, 0.8) 50%
   );
 }
+.product-card__btn-cart a {
+  text-decoration: none;
+  color: white;
+}
 
 .product-card__btn-cart {
   display: flex;
@@ -1113,7 +1117,6 @@ button {
 /* .page__map {
   margin-top: 5vh;
 } */
-
 .header__menu_up {
   display: flex;
   justify-content: space-between;
